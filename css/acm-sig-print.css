@@ -1,0 +1,43 @@
+/*
+ * pub-css
+ * ACM SIG Archival Format
+ *
+ * Created by: Michael S. Horn (michael-horn@northwestern.edu)
+ * Updated: March 21, 2013
+ */
+    
+.noprint {
+   display: none;
+}
+
+@page {
+   /*size: 8.5in 11in;*/
+   margin: 0.75in 0.75in 1in 0.75in;
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.pub-css {
+   display: none;
+}
+
+header, footer {
+   display: none;
+}
+
+#cite-button, #share-button, #pdf-button {
+   display: none;
+}
+
+p {
+  /*line-height: 125%;*/
+}
+
+figcaption {
+  line-height: 110%;
+}
