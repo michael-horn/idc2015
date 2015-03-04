@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Translating Roberto to Omar (IDC'13)</title>
+    <script src="css/acm-references.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/acm-sig.css" />
+    <link rel="stylesheet" media="print" type="text/css" href="css/acm-hci-print.css" />
+</head>
+
+<body onload="generateReferenceList();">
+   
+   <a id="cite-button" href="#" onclick="showHideFullCitation();">CITE</a>
+   <a id="pdf-button" href="stickerbook-idc-2013.pdf">PDF</a>
+
+   
+<div class="page">
+   
+   <div id="citation">
+      Horn, M.S., AlSulaiman, S., Kuo, J.
+      Translating Roberto to Omar: Computational literacy, stickerbooks, and
+      cultural forms. In <i>Proc. Interaction Design and Children (IDC'13)</i>,
+      New York, New York, ACM Press (2013).
+   </div>
+   
+   
+   <div class="title">Translating Roberto to Omar: <br />
+   Computational Literacy, Stickerbooks, and Cultural Forms</div>
+ 
+
+   <table style="width: 6.6in; margin-left: auto; margin-right: auto; vertical-align: top;">
+      <tr>
+         <td style="vertical-align: top; width: 2.2in">
+            <div class="authors">Michael S. Horn</div>
+            <div class="affiliation">
+               Northwestern University <br/>
+               2120 Campus Drive <br />
+               Evanston, Illinois 60208 USA
+            </div>
+         </td>
+         <td style="vertical-align: top; width: 2.2in">
+            <div class="authors">Sarah AlSulaiman</div>
+            <div class="affiliation">
+               Northwestern University and <br />
+               King Saud University<br/>
+               P.O. Box 2454,
+               Riyadh 11451
+            </div>
+         </td>
+         <td style="vertical-align: top; width: 2.2in">
+            <div class="authors">Jaime Koh</div>
+            <div class="affiliation">
+               Northwestern University <br/>
+               2120 Campus Drive <br />
+               Evanston, Illinois 60208 USA
+            </div>            
+         </td>
+      </tr>
+   </table>   
+   <div class="email">
+      michael-horn@northwestern.edu,
+      {sarah.sa, jaimekoh}@u.northwestern.edu
+   </div>
+   
+   
+   
+   <div class="copyright">
+      Permission to make digital or hard copies of all or part of this work for
+      personal or classroom use is granted without fee provided that copies are
+      not made or distributed for profit or commercial advantage and that copies
+      bear this notice and the full citation on the first page. Copyrights for
+      components of this work owned by others than ACM must be honored.
+      Abstracting with credit is permitted. To copy otherwise, or republish, to
+      post on servers or to redistribute to lists, requires prior specific
+      permission and/or a fee. Request permissions from Permissions@acm.org. <br>
+      IDC'13, June 24-27 2013, New York, NY, USA.<br>
+      Copyright &copy; 2013 ACM 978-1-4503-1918-8/13/06...$15.00.
+   </div>
+      
+   
+   <div class="columns">
+      
+   <h1 class="no-number">Abstract</h1>
+   <p>
+      We present the design and evaluation of an interactive storybook to support
+      emerging computational literacy skills for preschool and early elementary school
+      children. We structured our designs to take advantage of existing language
+      literacy practices between parents and children around the cultural form of a
+      children's storybook. We evaluated our design with 14 families from two distinct
+      cultural backgrounds: families from the United States Midwest and families from
+      Riyadh, Saudi Arabia. Our findings describe ways in which parents support
+      and structure children's programming activities, and how parental
+      involvement varied across the two groups. 
+   </p>
+   
+   <h2 class="no-number">Categories and Subject Descriptors</h2>
+   <p>
+      H.5.2. [Information Interface And Presentation]:
+      User Interfaces &ndash; Interaction styles;
+   </p>
+   
+   <h2 class="no-number">Keywords</h2>
+   <p>
+      Children;
+      computational literacy;
+      storybooks;
+      tangible interaction;
+      computer programming;
+      stickers;
+      cultural forms;
+      design;
+      learning.
+   </p>
+      
+   
+   <h1>Introduction</h1>
+   <p>
+      Developing a computationally literate citizenry is seen as an increasingly
+      important goal of modern society [<cite ref="bers-2008"></cite>,
+      <cite ref="disessa-2000"></cite>, <cite ref="papert-1980"></cite>,
+      <cite ref="resnick-2007"></cite>]. In this paper, we present the
+      design and evaluation of a storybook intended to support computational
+      literacy skills for preschool and early elementary school children. The
+      technology combines a paper storybook with computer programming activities
+      that children complete by adhering stickers to the pages of the book
+      (Figures 1-6). The programs then control an interactive digital character
+      that appears on the screen of a smartphone or tablet computer. 
+   </p>
+   <p>
+      In many parts of the world, parents and young children read storybooks
+      together [<cite ref="anderson-2010"></cite>, <cite ref="bus-2000"></cite>,
+      <cite ref="senechal-2006"></cite>]. Such family reading activities have been shown to
+      promote early literacy skills, reading achievement in elementary school,
+      and positive attitudes towards books in general [<cite ref="bus-1995"></cite>,
+      <cite ref="senechal-2006"></cite>]. One of the reasons we chose to embed
+      computational literacy activities in a storybook has to do with the
+      support that parents provide to children when they read together.
+      These support
+      <div style="width: 3in; height: 1.2in;"></div>
+
+      activities include making spontaneous connections between
+      the text of the book and the world of the child; providing emotional
+      encouragement; and tailoring the reading session to a child's needs and
+      abilities [<cite ref="bus-2000"></cite>,
+      <cite ref="bus-1995"></cite>,
+      <cite ref="chang-2011"></cite>,
+      <cite ref="raffle-2010"></cite>,
+      <cite ref="raffle-2011"></cite>]. Through the
+      use of a storybook, we hope to cue these valuable language literacy
+      practices and to provide a framework for parents to scaffold their
+      children's emerging computational literacy skills. We intentionally chose
+      to use a paper sticker book (rather than an electronic book) because we
+      believe that a physical book presents a <i>cultural form</i> that is less
+      ambiguous to parents than an app on a tablet computer. We discuss this
+      hypothesis and the role of cultural forms in design below.
+   </p>
+   <p>
+      Storybook reading is also a cultural phenomenon, with practices varying
+      from parent to parent, household to household, and region to region.
+      Some families view storybook reading as a pleasurable activity, while
+      others might think of it as more of an opportunity to teach literacy
+      skills or to impart important life lessons [<cite
+      ref="anderson-2010"></cite>, <cite ref="bus-2000"></cite>]. In selecting
+      a storybook as our source cultural form, we were aware that parental
+      activities could vary dramatically from one family to the next. Thus, to
+      evaluate our prototype we recruited families from two regions (8 families
+      from the U.S. Midwest, and 6 families from Riyadh, Saudi Arabia). In so
+      doing, we hoped to understand dimensions along which parental involvement
+      might vary and to improve our designs in light of diversity.
+   </p>
+   <p>
+      In this paper we review related work and provide a theoretical background
+      for our design. We then describe the design and implementation of our
+      prototype. Finally we present an evaluation with parents and children. Our
+      findings describe a variety of ways in which parents support their
+      children's programming activities.
+   </p>
+   <figure>
+      <img src="figs/idc13-figure1.png" style="width: 3.33in;" />
+      <figcaption>
+         Figure 1: Children reading a prototype of our stickerbook.
+      </figcaption>
+   </figure>
+   </div>
+   
+</div>
+<div class="pub-css">This document was created with <a href="https://github.com/michael-horn/pub-css">pub-css</a>.</div>
+<div class="page">
+   <div class="columns">
+   <h1>RELATED WORK</h1>
+   <p>
+      The integration of storytelling, physical materials, and interactive digital
+      systems has a rich history in the human-computer interaction literature. One
+      strand of research has involved the creation of immersive storytelling
+      environments (e.g. [<cite ref="bobick-1999"></cite>,
+      <cite ref="montemayor-2004"></cite>]).
+      For example, <i>StoryRoom</i> [<cite ref="montemayor-2004"></cite>] is an
+      immersive environment in which children can create and "program" their own
+      stories using interactive physical elements. To program StoryRoom, children use
+      a magic wand to specify the relationships between various interactive story
+      props (sensors and actuators). Another strand of research has explored
+      children's storytelling through the use of interactive "companions" such
+      as stuffed animals and child-friendly robots [<cite ref="bers-2008"></cite>,
+      <cite ref="druin-1999"></cite>,
+      <cite ref="franckel-2010"></cite>,
+      <cite ref="strommen-1998"></cite>,
+      <cite ref="umaschi-1997"></cite>]. Some of
+      these projects enable children to program elements of the interactive
+      companion to endow them with sound, emotional expression, and movement
+      [<cite ref="bers-2008"></cite>,
+      <cite ref="umaschi-1997"></cite>].
+   </p>
+   <p>
+      Several projects have also explored the use of physical and digital
+      storybooks as a context for communication, storytelling, and learning with
+      children [<cite ref="chang-2011"></cite>,
+      <cite ref="fails-2010"></cite>
+      <cite ref="franckel-2010"></cite>,
+      <cite ref="follmer-2010"></cite>,
+      <cite ref="hengeveld-2009"></cite>,
+      <cite ref="raffle-2010"></cite>,
+      <cite ref="raffle-2011"></cite>,
+      <cite ref="ryokai-2012"></cite>,
+      <cite ref="sylla-2012"></cite>]. One relevant example is Sylla et
+      al.'s <i>t-books</i> system that combines a physical book with electronic sensors
+      [<cite ref="sylla-2012"></cite>]. As children read t-books, they can place
+      picture cards into slots in the book to interact with the narrative
+      structure. Another project is Chang and Breazeal's <i>TinkRBook</i>, a
+      digital storybook that, among other things, allows children to explore
+      relationships between text and imagery in a story [<cite ref="chang-2011"></cite>].
+      In introducing their system, Chang and Breazeal pose the questions: "What
+      if books were 'tinkerable'? What if children could actively explore and
+      modify a story, through voice and touch, to dynamically explore meaning as
+      conveyed by the relationship of text to illustrated concept?" As part of
+      their project, Chang and Breazeal observed families reading together and
+      noted the variety of interactions between parents and children that
+      enriched the storytelling experience [<cite ref="chang-2011"></cite>].
+      <i>StoryFaces</i> is another storybook environment in which children
+      record emotional expressions through a digital camera that then become
+      part of the storybook's illustrations [<cite ref="ryokai-2012"></cite>]. 
+   </p>
+   <p>
+      Several recent projects have explored the use of storybooks as a context
+      to improve remote communication between distributed family members. <i>Video
+      Play</i> [<cite ref="follmer-2010"></cite>] is a system through which
+      children and long-distance family members act as characters in children's
+      storybooks by integrating video chat streams directly into the storybook
+      illustrations. <i>Family Story Play</i> [<cite ref="raffle-2010"></cite>]
+      and <i>Story Visit</i> [<cite ref="raffle-2011"></cite>] augment video
+      conferencing so that remote adult family members can see and hear each
+      other while reading the same connected storybook. Analysis of families
+      using these systems revealed that many of the common reading enrichments
+      that occur between adults and children carried through into the remote
+      sessions. Finally, Freed et al. presented the idea of using electronic
+      stickers to create personalized remote communication interfaces in <i>I/O
+      stickers</i> [<cite ref="freed-2011"></cite>]. Children can attach I/O
+      stickers to special greeting cards to invent ways to communicate with
+      long-distance loved ones with personalized connected messages. This was
+      one of the inspirations for our current stickerbook design.
+   </p>
+   <p>
+      Over the past forty years researchers have created a variety of
+      programming environments to introduce computational literacy skills to
+      children [<cite ref="druin-1999"></cite>,
+      <cite ref="disessa-2000"></cite>,
+      <cite ref="horn-2012"></cite>,
+      <cite ref="kelleher-2007"></cite>,
+      <cite ref="mcnerney-2004"></cite>,
+      <cite ref="montemayor-2004"></cite>,
+      <cite ref="papert-1980"></cite>,
+      <cite ref="sylla-2012"></cite>,
+      <cite ref="wyeth-2008"></cite>]. One interesting example that
+      combines storytelling and computer programming activities is <i>Storytelling
+      Alice</i> [<cite ref="kelleher-2007"></cite>]. Kelleher et al. designed
+      this programming environment to engage middle school girls in the creation
+      of interactive narratives with 3D virtual characters. Finally, tangible
+      programming environments attempt to incorporate playful physical materials
+      into the process of creating computer code (e.g. [<cite ref="horn-2012"></cite>,
+      <cite ref="mcnerney-2004"></cite>, <cite ref="montemayor-2004"></cite>,
+      <cite ref="wyeth-2008"></cite>]). Unlike much of the prior work in tangible
+      programming, our stickbook design employs the use of inexpensive materials
+      (paper stickers) that lend themselves to mass production and distribution.
+   </p>
+   <h1>DESIGN PROCESS</h1>
+   <p>
+      In this project we are attempting to create an informal learning activity
+      that supports emerging computational literacy skills in a fun and engaging
+      way for preschool and early elementary school children. The activity
+      ideally provides a structured introduction to basic computer programming
+      skills while at the same time allowing for open-ended exploration.
+      Finally, regardless of parents' prior experience with computer programming,
+      we hope to encourage productive parental involvement to tailor the
+      activity to a child's needs and experience level. 
+   </p>
+   </div>
+   <figure>
+      <img src="figs/idc13-figure2.png" style="width: 6.95in; border: 1pt solid black;" />
+      <figcaption style="width: 6.95in;">
+         Figure 2. Page from <i>Roberto</i> stickerbook. Illustrations by
+         Igor Ivanovic (brainlesstudio.blogspot.com), &copy Michael Horn.</i>
+      </figcaption>
+   </figure>
+</div>
+
+<div class="page">
+   <figure>
+      <img src="figs/idc13-figure3.png" style="width: 7in;" />
+      <figcaption style="width: 7in">
+         Figure 3. A collection of stickers that children can use to create programs for Roberto.
+         Illustration &copy Michael Horn.
+      </figcaption>
+   </figure>
+   <div class="columns">
+   <h2>Designing from Cultural Forms</h2>
+   <p>
+      Our design process was guided by the idea of building novel interactive
+      systems based on existing <i>cultural forms</i> [<cite ref="horn-2013"></cite>].
+      By cultural form, we refer to historically elaborated social constructions
+      that are inherently linked to social practices and activities [<cite ref="saxe-1991"></cite>].
+      Examples include things like counting systems, games, tools, monetary
+      currency, and so on. Cultural forms can involve physical artifacts (as in
+      currency systems or games like chess) or they can consist entirely of
+      patterns of activity (as in games like hide and seek). For this project,
+      we built on two cultural forms: children's storybooks and stickers.
+   </p>
+   <p>
+      The idea of designing from cultural forms was inspired by the notion of
+      <i>cultural funds of knowledge</i> [<cite ref="moll-1992"></cite>], Lee's
+      <i>cultural modeling design framework</i> [<cite ref="lee-2003"></cite>],
+      and Stevens' [<cite ref="stevens-2007"></cite>] ethnographic research on
+      children playing video games together in homes. Creating interactive
+      systems based on cultural forms has two advantages. First, cultural forms
+      are inherently linked to social practices. In other words, an artifact
+      like a storybook is nothing more than a few sheets of paper and cardboard
+      in the absence of recurrent, socially organized activities that give it
+      meaning. A storybook is a storybook because a child knows that she can
+      pull it off a shelf at bedtime, sit with it on her mother's lap, and read
+      it (or have it read to her). And, of course, the act of reading involves
+      far more than decoding symbols on the page and reciting the words out
+      loud. Parents and children have elaborate rituals that include making
+      spontaneous connections between the text and the world of the child,
+      pointing out characters and objects in the illustrations, asking and
+      answering questions, providing emotional support, and tailoring the
+      reading session to the child's needs and abilities [<cite
+      ref="anderson-2010"></cite>,
+      <cite ref="bus-2000"></cite>,
+      <cite ref="bus-1995"></cite>,
+      <cite ref="chang-2011"></cite>]. 
+   </p>
+   <p>
+      This leads to a second advantage, which is that the practices surrounding
+      cultural forms involve a variety of social, emotional, and cognitive
+      resources. If we can successfully evoke source cultural forms in our
+      designs, there is the possibility that users will bring these
+      practice-linked resources to bear on the novel activities that our
+      interactive system supports (in our case computational literacy
+      activities). Even though cultural forms have a degree of historical
+      stability, they are also malleable [<cite ref="saxe-1991"></cite>]. People
+      continually appropriate and restructure existing forms to serve new
+      functions in light of shifting goals and expectations [<cite
+      ref="saxe-1991"></cite>], opening the possibility that interaction
+      designers can intentionally create transitional forms that maintain
+      aspects of the source forms, while, at the same time, supporting novel
+      activities (such as computer programming). 
+   </p>
+   <p>
+      A final point is that cultural forms are culturally specific. Forms that
+      make sense in one context are not recognized in other contexts, or are not
+      recognized in quite the same way. Cultural forms might be more or less
+      accessible to different members of the same group depending on factors
+      such as age, gender, education, and individual experiences. For example,
+      experience in a specific domain (such as computer programming) might
+      change the meaning and utility of various forms [<cite
+      ref="saxe-1991"></cite>]. For these reasons we thought it was important to
+      test our prototype in diverse cultural contexts.
+   </p>
+   
+   <h2>Stickerbook Design</h2>
+   <p>
+      Thinking about this project from the standpoint of cultural forms helped
+      us to identify several possible design directions. The idea of using a
+      stickerbook to introduce programming activities was immediately appealing
+      because we thought that it provided a rich and recognizable form with
+      advantageous practice-linked resources. Specifically, we hoped that the
+      storybook form would promote parental involvement in structuring the
+      activity. We also assumed that kids would be familiar with stickers and
+      would know how to stick them to a sheet of paper. Another appealing aspect
+      is that the materials involved are relatively inexpensive and lend
+      themselves to mass production and distribution.
+   </p>
+   <p>
+      This project was challenging in that both the narrative structure and the
+      supporting technology were untested and needed to be able to function in concert
+      to create an engaging and enjoyable experience for parents and children. Based
+      on Wyeth [<cite ref="wyeth-2008"></cite>] and Horn et al.'s [<cite
+      ref="horn-2012"></cite>] work on programming curriculum for early
+      elementary school children, we attempted to introduce a series of powerful
+      ideas [<cite ref="bers-2008"></cite>, <cite ref="papert-1980"></cite>]
+      from computer programming and robotics through the storybook. Following
+      [<cite ref="horn-2012"></cite>] we selected programming activities to
+      build on one another conceptually while remaining developmentally
+      appropriate for children in our target age range (see Table 1).
+   </p>
+   <figure>
+      <img src="figs/idc13-figure4.png" style="width: 3.1in" />
+      <figcaption>
+         Figure 4. Begin and End Repeat stickers. <br>Image &copy; Michael Horn.
+      </figcaption>
+   </figure>
+   </div>
+</div>
+
+<div class="page">
+   <figure>
+   <figcaption style="width: 7in;">
+      Table 1. The storybook activities introduce children to a series of powerful ideas from computer programming (see
+      [<cite ref="horn-2012"></cite>]). 
+   </figcaption>
+   <table style="width: 6.95in; margin-bottom: 5px;">
+      <tr>
+         <td>
+         <b>Activity 1: Sequence of Actions</b> (prompt: Use the stickers to help Roberto dance) <br/>
+         Children create a program consisting of a BEGIN, an END, and three simple actions stickers in between. 
+         </td>
+      </tr>
+      <tr>
+         <td>
+         <b>Activity 2: Infinite Loop</b> (prompt: Use the stickers to make Roberto dance without stopping) <br />
+         Children expand an activity 1 to include a repeat loop (Figure 4) that repeats forever. 
+         </td>
+      </tr>
+      <tr>
+         <td>
+         <b>Activity 3: Counting Loop</b> (prompt: Use the stickers to make Roberto repeat his dance three times) <br />
+         Children modify the program structure of activity 2 to repeat only three times in a row. 
+         </td>
+      </tr>
+      <tr>
+         <td>
+         <b>Activity 4: Sensor Input</b> (prompt: Use the stickers to wake Roberto up when you tap on the screen) <br />
+         Children create a program consisting of a simple sequence of actions that interact with smartphone sensors (e.g. tapping the screen). 
+         </td>
+      </tr>
+      <tr>
+         <td>
+         <b>Activity 5: Open-ended prompt</b> (prompt: How do you think the story ends?) <br />
+         For the last activity, children are invited to create any program they desire to conclude the storyline.
+         </td>
+      </tr>
+   </table>
+   </figure>
+
+   <div class="columns">
+   <p>
+      Working with a storybook illustrator we iteratively developed and tested
+      several prototypes and storylines over the course of a year. Our current
+      prototype follows the story of a lonely boy named Roberto (Omar in our
+      Arabic translation) who travels across a city in search of new friends
+      (Figure 2). Each encounter between Roberto and the characters in the story
+      prompts a programming activity as shown in Figures 2 and 6. As with other
+      tangible programming languages, the stickers themselves encode a physical
+      syntax that indicates how they can be combined together on the page. For
+      example, the BEGIN sticker has an outgoing notch but no incoming notch,
+      while the END sticker has an incoming notch, but no outgoing notch (Figure
+      3). Likewise, the REPEAT stickers shown in Figure 4 have an angular
+      indentation on the top to indicate the location of a parameter sticker. We
+      tested several variations of sticker shapes before settling on those shown
+      in Figures 3 and 4. The challenge was to find a shape that took up as
+      little horizontal space on a page as possible while still allowing room
+      for text, an icon, and a TopCode on each sticker. The sticker shapes also
+      had to be easy for children to place on the page with reasonable accuracy.
+   </p>
+   <figure>
+      <img src="figs/idc13-figure5.png" style="width: 3in" />
+      <figcaption>
+      Figure 5. The sticker programs control a digital version of Roberto that
+      is animated on a smartphone or tablet computer.
+      </figcaption>
+   </figure>
+   <p>
+      Dashed sticker outlines on the pages of the book (see Figures 2 and 6)
+      indicate the structure of the programs that can be created, as well as the
+      types of stickers that can be used. There was a design tradeoff in terms
+      of providing enough guidance for parents and children to learn how to
+      create programs without getting frustrated while at the same time not
+      being overly restrictive in terms of creative expression. In general we
+      strove to keep the design as minimal as we could and to avoid textual
+      instructions whenever possible. However, based on pilot testing, we found
+      it necessary to include two pages of brief instructions at the beginning
+      of the book to describe the process of creating and running programs.
+      Finally, to revise programs, children can either peel the stickers off the
+      page to reuse them, or they can stick a different programming statement
+      directly on top of another statement.
+   </p>
+ 
+   <h2>Implementation</h2>
+   <p>
+      The programs that families create are acted out by a digital version of
+      Roberto on the screen of a smart phone or tablet computer (Figure 5). To
+      translate physical stickers into executable computer code, we adapted the
+      technique of Horn et al.'s Tern programming system [<cite
+      ref="horn-2012"></cite>]. In particular, each sticker includes a TopCode
+      computer vision fiducial that identifies both the type of sticker and its
+      placement relative to other stickers on the page (Figures 3 and 4). To
+      capture programs digitally, we developed an Android app that uses a mobile
+      device's built-in camera to take a photograph of the page. The individual
+      TopCodes are then decoded from the digital image and converted into
+      assembly instructions. This assembly code is then fed into a runtime
+      interpreter that controls an animated version of Roberto that appears on
+      the screen of the device (Figure 5). The compile process takes two to
+      three seconds depending on the device.
+   </p>
+   
+   <h1>Research Questions</h1>
+   <p>
+      In evaluating our prototype, we were interested in two questions. First,
+      was the storybook cultural form a good starting point for our design? In
+      other words, was it effective in cueing parents to provide structure and
+      support for their children in the programming activities? We were
+      especially interested in how parental practices from storybook reading
+      translated into computer programming activities.
+   </p>
+   <p>
+      Second, we developed our stickerbook prototype with the assumption that
+      practices surrounding storybook reading would vary dramatically from
+      household to household and region to region. Therefore, we were interested
+      in the question: Are there cultural differences in the ways in which
+      parents support their children? To address this research question, we
+      conducted testing with English-speaking families in the United States
+      Midwest and Arabic-speaking families in Riyadh, Saudi Arabia.
+   </p>
+   
+   <h1>Evaluation</h1>
+   <p>
+      To evaluate our prototype, we recruited caretaker-child dyads through fliers
+      and word-of-mouth. The participants dyads read the storybook and completed
+      the activities together. Sessions were held either at participant homes or
+      at our campus laboratory.
+   </p>
+   </div>
+</div>
+
+<div class="page" style="counter-reset: subsection;">
+   <figure>
+      <img src="figs/idc13-figure6.png" style="width: 6.95in;" />
+      <figcaption style="width: 7in;">
+         Figure 6. Page from the Arabic translation of the storybook in which
+         Roberto's name was changed to Omar
+         (<span style="font-size: 12pt;">&#1593;&#1605;&#1585;</span>). The
+         direction of the computer programs was also reversed to right-to-left
+         to be consistent with written Arabic. Illustration &copy; Michael Horn.
+      </figcaption>
+   </figure>
+   <div class="columns">
+      
+   <h2>Participants</h2>
+   <p>
+      Eight caretaker-child dyads participated in the study in the United
+      States. There were 4 boys and 4 girls, all between the ages of 4 and 10
+      (average age 6.63, SD=2.0). All of the families spoke English during the
+      study. Six dyads participated in the study in Saudi Arabia. There were 3
+      boys and 3 girls between the ages of 4 and 8 (average age 6.0, SD=1.41).
+      All families spoke in Arabic during this study. For these families, we
+      translated the storybook, stickers, and app to Arabic (Figure 6). We also
+      reversed the direction in which programs were assembled (right-to-left
+      rather than left-to-right) in order to be consistent with written Arabic.
+      All families received a gift certificate worth around $15 USD.
+   </p>
+   <h2>Methods</h2>
+   <p>
+      After signing consent forms, we presented participants with the storybook,
+      sticker sheets, and a mobile device. We then invited them to read the
+      story and do the activities together. If the participants asked the
+      researcher for help, we asked them to try to resolve the problem on their
+      own. The researchers only intervened when a problem prevented the
+      continuation of the activity. All of the sessions were video recorded,
+      transcribed, and translated to English for analysis. The transcriptions
+      included 2,798 lines spoken by adults. Informed by
+      research on storybook reading [<cite ref="anderson-2010"></cite>,
+      <cite ref="bus-2000"></cite>,
+      <cite ref="bus-1995"></cite>,
+      <cite ref="chang-2011"></cite>,
+      <cite ref="senechal-2006"></cite>],
+      we iteratively developed a coding scheme focused on the parents' role in
+      the sessions. We coded all of the sessions using the scheme shown in Table
+      2. Two researchers obtained 92.3% agreement on these codes based on 15% of
+      the transcripts (Kappa = 0.664).
+   </p>
+      
+   <h1>Findings</h1>
+   <h2>Parental Support Activities</h2>
+   <p>
+      Our first research question involved understanding the ways in which
+      parents structured the programming activities to support their children's
+      learning. Five broad categories of parental activity emerged from our
+      data (shown in Table 2). Technical support refers to identifying and
+      helping to operate equipment such as the mobile device, its camera, the
+      software, and the stickers (e.g. placing the stickers correctly on the
+      page). Task support is more conceptual in nature and focuses on the hows
+      and whys of computer programming. This includes drawing connections
+      between programming concepts and children's knowledge and prior
+      experiences; elaborating components of the programming task; and
+      explaining how the programming system worked. Emotional support includes
+      offering praise and encouragement; and confirming a child's decisions or
+      actions. Finally, lesson-oriented activities involve quizzing children
+      about the meaning of the stickers or the text as well as directly
+      instructing them to perform certain actions. 
+   </p>
+   <p>
+      Many of the parental support strategies for computational literacy seemed
+      closely related to strategies for general language literacy, and it was
+      often difficult to distinguish between the two. For example, the following
+      excerpt comes from a four-year-old girl and her mother in the United
+      States. The pair had just started their first programming activity in the
+      book and the mother used the opportunity to help familiarize her daughter
+      with the programming stickers.
+   </p>     
+   
+   <figure>
+   <figcaption>Table 2. Coding scheme for parent support activities.</figcaption>
+   <table style="width: 3.25in;">
+      <tr>
+         <td>
+            <b>Lesson-Oriented Activities</b><br />
+            &bull;&emsp;Giving direct instructions <br />
+            &bull;&emsp;Quizzing children about the book, stickers, or programs
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <b>Language Literacy Support</b><br />
+            &bull;&emsp;Helping child read and interpret the story 
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <b>Technical Support</b><br />
+            &bull;&emsp;Helping child with tablet and camera <br />
+            &bull;&emsp;Helping child with stickers or identifying stickers 
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <b>Task Support</b><br />
+            &bull;&emsp;Elaborating on the steps of the programming task<br />
+            &bull;&emsp;Describing programming syntax or semantics
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <b>Emotional Support</b><br />
+            &bull;&emsp;Verbally acknowledging and encouraging children
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <b>Questions the Researcher</b><br />
+            &bull;&emsp;Asking the researcher questions during the session
+         </td>
+      </tr>
+   </table>
+   </figure>
+   </div>
+</div>
+
+
+<div class="page" style="counter-reset: subsection 1;">
+   <div class="columns">
+ 
+   <p class="excerpt">
+      Mom: So what, what different things can he do in the dance? <br />
+      Daughter: Uh, that one, and I mean. That one, and that one, and that one [referring to stickers].<br />
+      Mom: What about these?<br />
+      Daughter: Well actually, this one.<br />
+      Mom: Which one is this? What's the word?<br />
+      Daughter: Spin!<br />
+      Mom: Spin. So what, if we use this sticker, what will he do? <br />
+      Daughter: Uh, spin.<br />
+      Mom: This one?<br />
+      Daughter: Walk.<br />
+      Mom: Walk.<br />
+      Mom: [pointing other stickers in turn]<br />
+      Daughter: Stand.<br />
+      Daughter: Run.<br />
+      Daughter: Spin [inaudible] ah ha ha!  <br />
+      Mom: That will be a fun one.
+   </p>      
+   <p>
+      The mother begins this excerpt by elaborating on the programming prompt:
+      "use the stickers to help Roberto dance". By asking her daughter what
+      "different things can he do", she was orienting her daughter to the
+      physical materials needed for the programming activity&mdash;in the video she
+      had positioned the stickers in front of the storybook and was pointing to
+      individual stickers in turn. Throughout the session, the mother positioned
+      the various pieces of equipment for her daughter to notice and identify. 
+   </p>      
+   <p>
+      The mother appeared to take advantage of the first activity to not only
+      familiarize her daughter with the range of possible programming stickers,
+      but also to practice reading skills; the girl at age four was just able to
+      read the words on the stickers. The mother pointed to each sticker in turn
+      and waited for her daughter to say the word out loud, after which the
+      mother repeated the word. And, by asking her daughter to predict the
+      effect of stickers ("if we use this sticker, what will [Roberto] do?"), she
+      assessed her daughter's understanding of the words on the stickers as well
+      as the ways in which the system functioned to control the
+      digital character.
+   </p>      
+   <p>
+      At another level, the mother seemed to be emotionally framing the activity
+      for her daughter by saying things like, "that will be a fun one". In other
+      words, she was setting up the activity as something that would be fun to
+      participate in. 
+   </p>      
+   <p>
+      Finally, the mother in this dyad (like many of the parents in our study)
+      provided a range of technical support to her daughter. These included
+      things like helping her daughter to peel stickers off the sheet, helping
+      her hold and position the tablet computer when it was time to take
+      pictures of the program, and identifying elements of the user interface
+      (such as buttons on the screen) for her daughter to press. Throughout the
+      session, the mother seemed to continually reassess her daughter's ability
+      to manipulate elements of the system, allowing her to perform the tasks on
+      her own when she was capable. Such scaffolding and fading of support was
+      commonly cited in research on parents and children reading
+      together [<cite ref="anderson-2010"></cite>, <cite ref="bus-2000"></cite>,
+      <cite ref="chang-2011"></cite>].
+   </p>
+   
+   <h3>6.1.1 Making Connections</h3>
+   <p>
+      While reading with children, many parents make connections between
+      elements of the story (characters, illustrations, and objects) and the
+      world of the child [<cite ref="anderson-2010"></cite>, <cite ref="bus-2000"></cite>,
+      <cite ref="chang-2011"></cite>]. In our data, this type of extra-textual
+      elaboration often carried over into the programming activities as well.
+      For example, one father and his 8-year-old son were working on the second
+      programming task together. The boy was a proficient reader, and he quickly
+      read the text of the story out loud while the father watched and listened
+      mostly in silence, mainly making comments or asking questions about the
+      task between the pages of the storybook. As the boy completed the second
+      activity, the father called attention to the repeat stickers.
+   </p>
+   <p class="excerpt">
+      Dad: [points to begin repeat and end repeat stickers] What, what does...
+      What we're creating here is like on the DJ software that we use and you
+      guys create loops.<br />
+      Son: [adds stop sticker] Yup. <br />
+      Dad: That's a loop. You know that's how we capture the start and the end.
+      All right, do your thing. See if you can make it work. 
+   </p>
+   <p>
+      Here the father attempts to draw a parallel between a programming control
+      structure (a loop) and another aspect of the child's life that he knows
+      his son has experienced.
+   </p>
+   
+   
+   <h3>6.1.2 Lesson-Oriented Activities</h3>
+   <p>
+      Some parents also seemed to use the activity as an opportunity to teach
+      language and programming skills to their children. These types of
+      interactions were characterized by frequent direct instructions and
+      questions about the meaning of the text, images, and programming stickers.
+      Parents would also often repeat their child's answers to questions. 
+   </p>
+   
+   
+   
+   <h2>Cultural Differences</h2>
+   <p>
+      Our second research question involved understanding differences in the
+      stickerbook activity due to cultural differences between families in two
+      distinct countries: United States and Saudi Arabia. Prior research
+      comparing parent-child reading practices of Dutch, Turkish-Dutch, and
+      Surinamese-Dutch families, found cultural differences in the ways in which
+      parents supported their children during storybook reading sessions [<cite ref="bus-2000"></cite>]. 
+   </p>
+   <p>
+      As we began to analyze our video, one obvious difference was the degree to
+      which Saudi parents questioned the researcher during the sessions. Even
+      though we instructed parents to try to figure out the activity on their
+      own, Saudi parents asked the researcher an average of 21 questions per
+      session compared to 4.13 questions per session from US parents (Figure 7).
+      Typical questions involved clarifying the purpose of the activity and
+      asking whether or not they were doing things correctly. This suggests that
+      the Saudi parents interpreted the purpose of the study differently than US
+      parents. 
+   </p>
+
+   <figure>
+      <img src="figs/idc13-figure7.png" style="width: 3.3in;" />
+      <figcaption>
+         Figure 7. Instances of parental support in US and Saudi families.
+         Significant differences are denoted with (*) (p &lt; 0.05).
+      </figcaption>
+   </figure>
+   </div>
+</div>
+<div class="page">
+   <div class="columns">
+   <p>
+      This difference in interpretation seemed to carry over into the
+      interactions between parents and children as well. Overall Saudi parents
+      made much more frequent use of direct instructions and assistance with the
+      stickers than US parents (see Figure 7). They also provided more frequent
+      explanations of the programming tasks and system. From these data, it
+      appears that the Saudi parents saw the activity as an opportunity to
+      offer direct instruction to their children, both in terms of general
+      language literacy and computational literacy. For example, this excerpt
+      came from a Saudi mother reading with her son (age 8):
+   </p>
+   <p class="excerpt">
+      Mom: Tap... Forever [reading]. Can we use these now? [question directed to researcher]<br />
+      Researcher: What do you think?<br />
+      Mom: [pasting sticker] ...gets repeated over and over<br />
+      Son: Run<br />
+      Mom: This is jump here [correcting son]<br />
+      Kid: Jump, sleep... so he could get some rest.<br />
+      Mom: Okay, what next?<br />
+      Kid: Sleep, so he could get some rest.<br />
+      Mom: Sleep?!<br />
+      Kid: Yes, to get rest!<br />
+      Mom: Umm, no. Jump and then directly sleep? I don't think it is appropriate.<br />
+      Kid: He plays a lot<br />
+      Mom: Yes [laughs]
+   </p>
+   <p>
+      The US parents also treated the stickerbook as an opportunity for learning, but
+      the activity seemed more child-directed. For example, US parents asked almost
+      twice as many quiz-like questions as Saudi parents (not significant), but they
+      also provided less physical assistance to children while at the same time
+      offering slightly more emotional support (also not significant). On average US
+      parents also spoke less than their Saudi counterparts. There were 204 utterances
+      per session average for US parents (SD=115) compared to 309 utterances for Saudi
+      parents (SD=33.6); t(12)=2.14, p=0.054. The average session length for Saudi
+      families was 
+      
+      35.12 minutes (SD=4.4)
+      
+      while the average session length for US familes was
+      
+      30.74 minutes (SD=8.86).
+      
+      The difference was not significant. 
+
+   </p>
+   <p>
+      These results should be interpreted with caution. While the differences
+      were significant in many cases, our sample was small, and other factors
+      beyond culture and language might have contributed to these results. One
+      important factor could have been that the US families were recruited from
+      a University campus, while the Saudi families were not. 
+   </p>
+   <h1>Discussion</h1>
+   <p>
+      At one level this paper explores new ways to support children's early
+      computational literacy. We believe that this is important not only to
+      develop the next generation of scientists and engineers, whose professions
+      are indisputably more computational than ever before, but also to
+      support a computationally literate citizenry (teachers, doctors,
+      lawyers, artists, activists) in an increasingly computationally-oriented
+      world [<cite ref="bers-2008"></cite>,
+      <cite ref="disessa-2000"></cite>,
+      <cite ref="papert-1980"></cite>,
+      <cite ref="resnick-2007"></cite>,
+      <cite ref="wing-2008"></cite>].
+   </p>
+   <p>
+      At another level, this paper explores the idea of designing through
+      cultural forms as a way to invoke valuable cognitive, social, and
+      emotional resources. In this case we embedded computational literacy
+      activities within a children's storybook in a deliberate effort to not
+      only encourage parental involvement but also to suggest effective ways for
+      them to be involved. Because we work from recognizable cultural forms,
+      we hope to facilitate interactions between parents and children that might
+      not otherwise occur. And, in this case, our role as designers is to make
+      evident the connection between early language literacy and early
+      computational literacy.
+   </p>
+   <p>
+      Here the legibility of the cultural form is critical. Imagine that the
+      instead of a paper storybook, we had instead created an activity that
+      existed entirely on a tablet computer. This would have made the creation
+      of programs easier, but might have also obscured the underlying cultural
+      form. Plausibly, the tablet computer itself, would become the most salient
+      aspect of the activity, a device that can be a video game, an email
+      client, a music player, a camera, and so on. The social activity
+      structures surrounding the tablet computer are correspondingly diverse,
+      but this flexibility could have a downside. As parents and kids engage
+      with the device, there is a period of uncertainty and orientation that
+      must take place before the familiar form of the storybook begins to
+      surface. Powering on the device, fumbling through homes screens, and
+      finding the right icon to launch the app. There is also a looming
+      possibility that the activity will be interrupted when a child
+      accidentally presses the home button and dissolves the storybook world.
+      Finally, there is a period of learning that must take place once the
+      book/app is launched. This is because the use of an e-book implies a sort
+      of metaphorical gulf that parents and children must bridge. In other
+      words, a mapping between the experience of reading a physical book and
+      interacting with an e-book must be constructed and then mutually agreed
+      upon by the parent and child. "Look, this screen is just like the page of
+      a book, and sliding a finger is like turning the page."
+   </p>   
+   <p>
+      Our results highlight some of the opportunities and challenges of working
+      with paper books. In cases where parents or caregivers were less involved,
+      children struggled to make sense of the activity on their own. On the
+      other hand, when parents were more actively involved, we observed many
+      instances of learning interactions in which parents scaffolded their
+      children's understanding of the programming activities. And, while we
+      observed differences between US and Saudi parents in the ways in which
+      they interpreted and structured the stickerbook activities for their
+      children, both supported what seemed to be valuable learning interactions.
+   </p>
+   
+   <h1>Limitations And Future Work</h1>
+   <p>
+      One limitation of this work is that the sticker/computer vision mechanism
+      might be more difficult to use than a purely graphical programming system.
+      Another approach might be to offer the programming activities entirely on
+      the screen of the mobile device with the storybook as a companion element.
+      Or we could create a hybrid environment [<cite ref="horn-2012"></cite>] in
+      which kids could program either with stickers or on the screen. These are
+      directions we would like to explore in future research. 
+   </p>
+   <p>
+      A second limitation is that despite recruiting participants in two
+      countries and two languages, our sample was still narrow and relatively
+      affluent. In the future, we might test with a broader range of families
+      even within one country to capture a more diverse sample. We would also
+      like to include an assessment of learning outcomes to provide quantitative
+      data on the effectiveness of this approach in fostering computational
+      literacy.
+   </p>      
+   </div>   
+</div>
+<div class="page">
+   <div class="columns">
+   <h1>CONCLUSION</h1>
+   <p>
+      In this paper we presented a computational literacy stickerbook. Our goal
+      is to create an engaging informal learning experience that introduces
+      powerful ideas from computer programming in a somewhat structured format.
+      To accomplish this, we adopted the cultural form of a children's
+      storybook. The use of the narrative structure of a storybook allowed us to
+      arrange the programming activities in a linear sequence of increasing
+      complexity. We also expected that storybooks would engage parents in
+      helping to structure and support their children's learning. To test these
+      ideas, we conducted an evaluation with 14 families from the United States
+      and Saudi Arabia. Our findings suggest that parents and children engage in
+      a variety of literacy-related activities while reading the book and
+      creating programs. Many storybook reading practices seemed to carry over
+      into the programming activities as well. 
+   </p>
+   
+   <h1>ACKNOWLEDGMENTS</h1>
+   <p>
+      We thank members of the Tangible Interaction Design and Learning (TIDAL)
+      Lab for valuable advice. We also thank the parents and children who tested
+      our prototypes.
+   </p>
+   <h1>References</h1> 
+   <ol class="references">
+      <li id="anderson-2010">Anderson, J., Anderson, A., Friedrich, N., Kim, J.E. (2010). Taking stock of family literacy: Some contemporary perspectives. <i>Early Childhood Literacy, 10</i>(1), 33-53.</li>
+      <li id="bers-2008">Bers, M. (2008). <i>Blocks to Robots: Learning with Technology in the Early Childhood Classroom</i>. Teachers College Press.</li> 
+      <li id="bobick-1999">Bobick, A., Intille, S.S., Davis, J.W., Baird, F., Pinhanez, C.S., Campbell, L.W., Ivanov, Y.A., Sch&uuml;tte, A. & Wilson, A. The Kidsroom: A perceptually-based interactive and immersive story environment. In <i>Presence</i>, MIT Press (1999), 367-391.</li> 
+      <li id="bus-2000">Bus, A.G., Leseman, P.P.M., & Keultjes, P. (2000). Joint book reading across cultures: A comparison of Surinamese-Dutch, Turkish-Dutch, and Dutch parent-child dyads. <i>Journal of Literacy Research, 32</i>(1), 53-76.</li> 
+      <li id="bus-1995">Bus, A.G., van Ijzendoorn, M.H., & Pellegrini, A.D. (1995). Joint book reading makes for success in learning to read: A meta-analysis on intergenerational transmission of literacy. <i>Review of Ed. Research, 65</i>(1), 1-21.</li> 
+      <li id="chang-2011">Chang, A. and Breazeal, C. TinkRBook: Shared reading interfaces for storytelling. In <i>IDC'11</i>, ACM (2011), 145-148.</li> 
+      <li id="druin-1999">Druin, A., Montemayor, J., Hendler, J., et al. Designing PETS: A personal electronic teller of stories. In <i>Proc. CHI'99</i>, ACM (1999), 326-329.</li> 
+      <li id="disessa-2000">diSessa, A. (2000). <i>Changing Minds: Computers, Learning, and Literacty.</i> MIT Press.</li>
+      <li id="fails-2010">Fails, J.A., Druin, A., Guha, M.L. Mobile collaboration: collaboratively reading and creating children's stories on mobile devices. In <i>Proc. IDC'10</i>, ACM(2010), 20-29.</li>
+      <li id="franckel-2010">Franckel, S., Bonsignore, E., & Druin, A. (2010). Designing for children's mobile storytelling. <i>Journal of Mobile Human-Computer Interaction, 2</i>(2), 19-36.</li> 
+      <li id="glos-1997">Glos, J., & Cassell, J. (1997). Rosebud: Technological toys for storytelling. In <i>Proc. CHI'97</i>, ACM (1997), 359-360.</li> 
+      <li id="follmer-2010">Follmer, S., Raffle. H., Go, J., Ballagas, R., & Ishii, H. Video play: playful interactions in video conferencing for long-distance families with young children. In <i>IDC'10</i>, ACM (2010), 49-58.</li> 
+      <li id="freed-2011">Freed, N., Qi, J., Setapen, A., Breazeal, C., Buechley, L., and Raffle, H. Sticking together: Handcrafting personalized communication interfaces. In <i>IDC'11</i>, ACM (2011), 238-241.</li>
+      <li id="hengeveld-2009">Hengeveld, B., Hummels, C., and Overbeeke, K. Tangibles for toddlers learning language. In <i>Proc. Tangible and Embedded Interaction (TEI'09)</i>, ACM(2009), 161-168.</li>
+      <li id="horn-2013">Horn, M.S. The role of cultural forms in tangible interaction design. In <i>Proc. Tangible, Embedded and Embodied Interaction (TEI'13)</i>, ACM (2013).</li> 
+      <li id="horn-2012">Horn, M.S., Crouser, R.J., & Bers, M.U. (2012). Tangible interaction and learning: The case for a hybrid approach. <i>Pers. and Ubiq. Computing, 16</i>(4), 379-389.</li>
+      <li id="kelleher-2007">Kelleher, C., Pausch, R., & Kiesler, S. Storytelling Alice motivates middle school girls to learn computer programming. In <i>Proc. CHI'07</i>, ACM (2007), 1455-1464.</li> 
+      <li id="lee-2003">Lee, C. (2003). Toward a framework for culturally responsive design in multimedia computer environments: Cultural modeling as a case. <i>Mind, Culture, and Activity, 10</i>(1), 42-61.</li>
+      <li id="mcnerney-2004">McNerney, T. (2004). From turtles to tangible programming bricks: explorations in physical language design. <i>Pers. and Ubiq. Computing, 8</i>(5), 326-337.</li>
+      <li id="moll-1992">Moll, L.C., Amanti, C., Neff, D., Gonzalez, N. (1992). Funds of knowledge for teaching: Using a qualitative approach to connect homes and classrooms. <i>Theory into Practice, 31</i>(2), 132-141.</li>
+      <li id="montemayor-2004">Montemayor, J., Druin, A., Chipman, G., Farber, A., & Guha, M.L. (2004). Tools for children to create physical interactive StoryRooms. <i>Computers in Entertainment: Educating children through entertainment Part II, 2</i>(1). </li>
+      <li id="papert-1980">Papert, S. (1980). <i>Mindstorms: Children, Computers, and Powerful Ideas.</i> New York: Basic Books. </li>
+      <li id="raffle-2010">Raffle, H., Ballagas, R., Revelle, G., Horii, H., Follmer, S., Go, J., Reardon, E., Mori, K., Kaye, J., & Spasojevic, M. Family story play: reading with young children (and Elmo) over a distance. In <i>Proc. CHI'10</i>, ACM (2010).</li>
+      <li id="raffle-2011">Raffle, H., Revelle, G., Mori, K., Ballagas, R., Buza, K., Horii, H., Kaye, J., Cook, K., Freed, N., Go, J., Spasojevic, M. Hello, Is Grandma there? StoryVisit: Family video chat and connected e-books, In <i>Proc. CHI'11</i>, ACM (2011), 1195-1204.</li>
+      <li id="resnick-2007">Resnick, M. (2007). Sowing the seeds for a more creative society. Learning and Leading with Technology. <i>Int. Society for Technology in Education.</i></li>
+      <li id="ryokai-2012">Ryokai, K., Raffle, H., & Kowalski, R. StoryFaces: pretend-play with ebooks to support social-emotional storytelling. In <i>Proc. IDC'12</i>. ACM (2012), 125-133.</li>
+      <li id="saxe-1991">Saxe, G.B. (1991). <i>Culture and cognitive development: Studies in mathematical understanding.</i> Erlbaum.</li>
+      <li id="senechal-2006">Senechal, M. (2006). The effect of family literacy interventions on children's acquisition of reading: From kindergarten to grade 3. Nat'l Center for Family Lit.</li>
+      <li id="stevens-2007">Stevens, R., Satwicz, T., & McCarthy, L. In-game, in-room, and in-world: Reconnecting video game play to the rest of kids' lives. In K. Salen (Ed.) <i>The Ecology of Games: Connecting Youth, Games, and Learning</i>, MIT Press (2007), 41-66. </li>
+      <li id="strommen-1998">Strommen, E. 1998. When the interface is a talking dinosaur: Learning across media with actimates Barney. In <i>Proc. CHI'98</i>, ACM (1998), 288-295.</li>
+      <li id="sylla-2012">Sylla, C., Branco, P., Gon&ccedil;alves, S., Coutinho, C., Brito, P. t-books: Merging traditional storybooks with electronics. In <i>Proc. IDC'12</i>, ACM (2012), 323-326.</li>
+      <li id="umaschi-1997">Umaschi, M. Soft toys with computer hearts: Building personal storytelling environments. In <i>Proc. CHI'97</i>. ACM (1997).</li>
+      <li id="wing-2008">Wing, J.M. (2008). Computational Thinking and Thinking About Computing. <i>Phil. Trans. of the Royal Society, 366</i>, 3717-3725.</li>
+      <li id="wyeth-2008">Wyeth, P. (2008). How young children learn to program with sensor, action, and logic blocks. <i>Journal of the Learning Sciences, 17</i>(4), 517-550.</li> 
+   </ol>
+   </div>
+</div>
+   
+
+<div id="reference-details"></div>
+
+</body>
+</html>
