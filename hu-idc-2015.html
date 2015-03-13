@@ -2,50 +2,89 @@
 <html>
   <head>
     <meta charset='UTF-8'>
-    <title>Demo Title (IDC'15)</title>
+    <title>Strawbies Tangible Programming Game for Young Children</title>
     <link rel="stylesheet" type="text/css" href="css/acm-sig.css">
     <link rel="stylesheet" media="print" type="text/css" href="css/acm-sig-print.css">
     <script src="js/cssregions.js"></script>
     <script src="js/acm-references.js"></script>
+    <style>
+    #figure1 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 3.33in;
+      height: 4.1in;
+    }
+
+    #figure2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3.33in;
+      height: 4.44in;
+    }
+
+    #figure3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7in;
+      height: 2.5in;
+    }
+    
+    #figure4 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7in;
+      height: 3.25in;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+    </style>
   </head>
   <body onload="generateReferenceList();">
 
     <div class="page">
       <div class="page-content">
-        <div id="citation"> Horn, M.S., Brady, C., Hjorth, A., Wagh, A., and
-          Wilensky, U. Frog Pond: A Code-First Learning Environment on Evolution
-          and Natural Selection. In <i>Proc. Interaction Design and Children (IDC'14)</i>, ACM Press (2014). </div>
+        <div id="citation"> </div>
         
         
-        <div class="title"> Demo Title IDC 2015</div>
+        <div class="title">Strawbies Tangible Programming Game</div>
 
-        <div class="authors">Felix Hu, Michael S. Horn, Frances Judd</div>
+        <div class="authors">Author 1, Author 2, Author 3</div>
         
         <div class="affiliation"> 
-          Northwestern University <br>
-          Learning Sciences and Computer Science<br>
-          2120 Campus Drive, Evanston, Illinois 60208 USA
+          Anonymous <br>
+          Affiliation<br>
+          Address
         </div>
         
-        <div class="email">michael-horn@northwestern.edu</div>
+        <div class="email">email1, email2, email3</div>
         
         <div class="copyright">
-          Permission to make digital or hard copies of all or part of this work
-          for personal or classroom use is granted without fee provided that
-          copies are not made or distributed for profit or commercial advantage
-          and that copies bear this notice and the full citation on the first
-          page. Copyrights for components of this work owned by others than ACM
-          must be honored. Abstracting with credit is permitted. To copy
-          otherwise, or republish, to post on servers or to redistribute to
-          lists, requires prior specific permission and/or a fee. Request
-          permissions from permissions@acm.org. <br>
-          IDC'14, June 17-20, 2014, Aarhus, Denmark.<br>
-          Copyright &copy; 2014 ACM  978-1-4503-2272-0/14/06...$15.00.<br>
-          http://dx.doi.org/10.1145/2593968.2610491
+          Permission to make digital or hard copies of all or part of this work 
+          for personal or classroom use is granted without fee provided that 
+          copies are not made or distributed for profit or commercial advantage 
+          and that copies bear this notice and the full citation on the first 
+          page. To copy otherwise, or republish, to post on servers or to 
+          redistribute to lists, requires prior specific permission and/or a fee.<br>
+          <i>Conference’10</i>, Month 1–2, 2010, City, State, Country.<br>
+          Copyright 2010 ACM 1-58113-000-0/00/0010...$15.00.<br>
         </div>
         
-        <div class="column left" style="height: 5.6in;"></div>
-        <div class="column right" style="height: 7in;"></div>
+        <div class="column left" style="height: 6.3in;"></div>
+        <div class="column right" style="height: 3.4in;"></div>
+        <figure id="figure1">
+          <div style="background-color: #ccc; width: 3.33in; height: 3.75in;">FIG 1</div>
+          <figcaption>
+            Figure 1. Children playing with Strawbies using tangible tiles, iPad, and Osmo
+            attachment.
+          </figcaption>
+        </figure>
+
         <div class="page-footer"></div>
       </div>
     </div>
@@ -54,47 +93,60 @@
     <!-- Page 2 -->
     <div class="page">
       <div class="page-content">
-        <div class="column left"></div>
+        <figure id="figure2">
+          <img src="figures/figure2.png" style="width: 3.33in; height: 4.44in" alt="">
+          <figcaption>
+            Figure 2. Screen shot of the iPad game. The game shows an image from the front camera to help reinforce the link between the tangible programming tiles and Awbie's movement in the world (top left). We also use arrows
+            and icons to give children a preview of what will happen when their program is 
+            played. 
+          </figcaption>
+        </figure>
+        <div class="column left" style="height: 3.85in; margin-top: 5.4in"></div>
         <div class="column right"></div>
         <div class="page-footer"></div>
       </div>
     </div>
 
     
-    
     <!-- Page 3 -->
     <div class="page">
       <div class="page-content">
-        <div class="column left"></div>
-        <div class="column right"></div>
+        <figure id="figure3">
+          <img src="figures/figure3.png" style="width: 7in; height: 2.25in" alt="">
+          <figcaption>
+            Figure 2. Collection of programming tiles available to guide the character in search of stawberries.
+          </figcaption>
+        </figure>
+
+        <div class="column left" style="margin-top: 2.5in; height: 6.75in;"></div>
+        <div class="column right" style="margin-top: 2.5in; height: 6.75in;"></div>
         <div class="page-footer"></div>
       </div>
     </div>
+
     
     
     <!-- Page 4 -->
     <div class="page">
       <div class="page-content">
-        <div class="column left"></div>
-        <div class="column right"></div>
+        <div class="column left" style="margin-top: 3in; height: 6.25in;"></div>
+        <div class="column right" style="margin-top: 3in; height: 6.25in;"></div>
+        <figure id="figure4">
+          <img src="figures/figure4.png" style="width: 7in; height: 2.5in" alt="">
+          <figcaption>
+            Figure 4. We have developed four major revisions of the game that we have tested with children, parents, teachers, and other users.
+          </figcaption>
+        </figure>
+
         <div class="page-footer"></div>
       </div>
     </div>
-
-
+    
     
     <div id="article-content">
       <h1 class="no-number">Abstract</h1>
       <p>
-        Understanding processes of evolution and natural selection is both
-        important and challenging for learners. We describe a "code-first"
-        learning environment called Frog Pond designed to introduce natural
-        selection to elementary and middle school aged learners. 
-        Learners use NetTango, a blocks-based programming interface to NetLogo,
-        to control frogs inhabiting a lily pond. Simple programs result in
-        changes to the frog population over successive generations. Our approach
-        foregrounds computational thinking as a bridge to understanding
-        evolution as an emergent phenomenon.
+        In this demo we present Strawbies, a real-time tangible programming game developed for ages 4 to 7. Strawbies is played by moving and connecting physical wooden tiles in front of an iPad. This interaction is made possible through the use of an Osmo play system, which includes a mirror that reflects images in front of the iPad through the front-facing camera. We combined this system with the TopCodes computer vision library to result in fast and reliable image recognition. Here we describe a set of principles that guided our iterative design process and discuss how testing with children informed the most recent instantiation of Strawbies. 
       </p>
       
       <h2 class="no-number">Categories and Subject Descriptors</h2>
@@ -105,144 +157,177 @@
       
       <h2 class="keywords no-number">Keywords</h2>
       <p>
-        Children; tangible programming; design; learning.
+        Children; tangibles; games; strawberries.
       </p>
       
       
       <h1>Introduction</h1>
       <p>
-      In this demo we present Strawbies. The goal of the introduction is to frame 
-      the research for the IDC audience. What's the big idea?
+      In this demo we present Strawbies, a tangible programming game designed for children ages 4 to 7. Strawbies is an iPad app that features Awbie, a character that children guide through a virtual world using wooden programming tiles (Figures 1, 2, 3). Our system combines the TopCode computer vision library [TOPCODES] with the Osmo play system [OSMO] to allow for real-time recognition of programs that children construct on a flat surface in front of the iPad (Figure 1). This results in an inexpensive, engaging, and portable tangible programming environment.  Our design process has involved five major revisions of the game that were tested with children, parents, and teachers (see Figure 4). 
+      </p>
+
+      <h1>Design Principles</h1>
+      <p>
+      Our design builds on prior work in tangible interaction and children's programming environments and was guided by the following seven principles:
+      </p>
+      <p>
+      <b>1. Inviting:</b> Through the use of tangible programming tiles, we hoped to create an inviting play experience that would draw children in to a collaborative play experience. The use of tangibles increases the visibility of game play, allowing it to move beyond the screen and spill out into the real world. In our testing sessions, children would often notice the game from across the room.
+      </p>
+      <p>
+      <b>2. Playful and Open-Ended:</b> In the spirit of many children's programming environments [PAPERT, ETC], we wanted to create a fun experience that would support children's open-ended exploration. This led us, over time, to an open-world style of game in which Awbie is free to roam around an infinite, randomly generated landscape. While the game is loosely structured around the task of guiding Awbie to eat and grow straberries, children are free to playfully explore the world in any way they see fit.
+      </p>
+      <p>
+      <b>3. Simple+Complex:</b> As with prior work on the development of programming environments for informal learning settings [Horn, Horn, CMU], we wanted to create a system that was simple enough for children as young as four years old to figure out on their own with little or no instruction. However, we had to balance this goal of simplicity against the ability to create relatively sophisticated programs that could lead to complex behavioral outcomes for Awbie.
+      </p>
+      <p>
+      <b>4. Developmentally Appropriate:</b> We wanted to ensure that the content of our game was accessible to our target audience and that the game play was appropriate for children's cognitive, perseptual-motor, and social ability. To ensure that we achieved this, we conducted multiple rounds of testing with children in our target age range. 
+      </p>
+      <p>
+      <b>5. Pedagogically Aligned:</b> One of the greatest challenges facing the adoption of developmenally appropriate technology in classrooms is that teachers must feel comfortable and confident with the technology themselves [CUBAN]. This includes making sure that technology aligns with the pedagogical philosophy of early childhood educators, a philosophy that emphasizes rich sensory-motor experiences, open-ended exploration, and social interaction. We see the use of tangible technology as an excellent way to introduce computational thinking activities in a way that evokes familiar cultural forms of teaching and learning [Horn]. 
+      </p>
+      <p>
+      <b>6. Social:</b> Along the lines of the previous design principles, we sought to design an activity that was inherently social in nature in that it would invite multiple children into the game, allow them to easily distribute their activity in collaborative play, and create space for multiple hands and bodies. 
+      </p>
+      <p>
+      <b>Adaptable:</b> The difference in ability of a four-year-old and a seven-year-old child can be dramatic. In developing the game, we sought to create an activity that could grow with the child, perhaps with the proximal assistance of an adult or older child. For example, for pre-literate children, it might be necessary to read text out loud to help children interpret meaning and understand the graphical elements of the blocks. Or, teachers might choose to remove some of the blocks (such as the event triggers) from the activity until a child has mastered the more basic concepts. This is one example of the flexibility that tangibles afford&mdash;no customization of the software is necessary to instantly adapt the activity. 
       </p>
 
       <h1>Related Work</h1>
       <p>
-      Here we're going to talk about other tangible programming systems and other 
-      programming systems for kids in general. 
+      Our project builds on a long and rapidly growing tradition of programming environments for young children [Papert, diSessa, Weintrop, ScratchJR, Montemayor, Wyeth, Dr.Wagon, Tern, Stickers, Scratch, Logo] (see also [McNerney] for an excellent account of older work dating back to the 1970s). There is also growing momentum around the idea of supporting computational literacy activities throughout K-12 education and starting at the earliest grade levels. Our project contributes to this space by improving the flexibility, portability, and practicality of tangible programming for young children. 
       </p>
-      <h2>Tangible Programming</h2>
-      <h2>New Programming Environments</h2>
 
-      <h1>Design</h1>
+      <h1>Design Iterations</h1>
+
+      <h2>Exploring developing for the Osmo</h2>
       <p>
-      Talk about your design process and the various iterations.
+      This version had two goals: making image recognition reliable and quick, and designing the blocks. The design of the blocks had several specifications. Connected blocks should slide around easily while maintaining structural integrity. Blocks should be easily insertable and removable at any point in the code. Blocks should also allow for customization, looping, and if/then logic. 
       </p>
+
+      <p>
+      Image recognition was simplified through the use of TopCodes. The Osmo was a perfect fit for TopCodes, as the image reflected by the Osmo could easily be distorted such that the codes were orthogonal to the camera. Using TopCodes provided reliable and responsive image recognition painlessly.
+      </p>
+
+      <p>
+      We went through numerous versions of these physical blocks before settling on a design which fulfilled all of our requirements. The blocks were split into several categories: verbs, adverbs and units of measurement. Verb blocks begin the start of each line of code, and the player can attach adverbs and units of measurements to the verb. For example: walk (verb) + 5 inches (unit) + right (adverb). Verbs slide in and out of other verbs conveniently, while units and adverbs attach to verbs like puzzle pieces. Each string of verbs could start with an Always block (for looping behavior) or a When block (for if/then logic). Due to the limited field of vision of the Osmo and its more intuitive nature, we chose to use event driven logic over sequential logic.
+      </p>
+
+      <p>
+      The game itself was a series of puzzles, much like code.org’s Learn Programming series. From testing, we found that our players were easily frustrated by the game—especially the lower end of our target age (4-10). Puzzles had only two or three possible solutions, and failure meant you had to restart the puzzle. We felt that the interaction opened up by the Osmo and tangible pieces allowed for more benefits than just the benefits typically associated with tangible programming, and we wanted to drastically rethink the game.
+      </p>
+
+      <p>
+      The UI layout was influenced by Scratch and other tablet coding games which did not use tangible pieces. Half of the screen was dedicated to showing what the iPad was reading. This was unnecessary, as the physical code blocks in front of the iPad is an extension of the UI.
+      </p>
+
+      <h2>Creating an Open World Environment</h2>
+      <p>
+      Realizing that the physical representation did not need to show up on screen opened up a lot of possibilities. Going off of testing which showed that puzzles with a binary answers was frustrating, we made an open world game where the goal was more open-ended (find “Strawbies”), and the solution even more so. We dedicated the entire tablet screen to the game itself.
+      </p>
+
+      <p>
+      We wanted to create a fluid and responsive game. This version reacted in real time to what was in front of the screen. Every block that was slid in front of the screen would be immediately added to a pool of actions that the avatar would do. The game randomly chooses from all available sets of instructions in front of the iPad, and performs the action. If a block was lacking qualifiers (for example: walk + 2 inches + ???), the game would pick one of the possible qualifiers automatically. 
+      </p>
+
+      <p>
+      The game was open world and randomly generated. The structure for the game was provided by obstacles: water, trees and bats. Trees obstruct movement, and contact with water or bats causes the game to end. Players could add events that are triggered by obstacles. A possible even could be “When water is in front, turn 90 degrees right and walk”.
+      </p>
+
+      <p>
+      This game was better received by players, but a few play sessions exposed a few issues. Blocks had too many qualifiers, a line of code can require up to three different blocks. The game was too challenging, for adults and children, and also far too reactive. Furthermore, collecting strawberries was not enough of a motivation.
+      </p>
+
+      <h2>Refining the Open World Game</h2>
+      <p>
+      In this version, we kept the open world concept as it showed optimistic results in testing. We made refinements many points in the game to improve the fun and playability of the game.
+      </p>
+
+      <h3>Simpler Blocks</h3>
+      <p>
+      We kept the same verb + qualifier structure, but we reduced each action to require no qualifiers. For example, the verbs are now: walk, turn left/right and special action words. The player can attach a number to verbs, which increases the number of times the action is performed.
+      </p>
+
+      <h3>Added symbols to blocks</h3>
+      <p>
+      We kept the features of the blocks, but redesigned them so there was room for symbols for each block. We added recognizable symbols to each block, as our target age range includes children not yet confident in literacy.
+      </p>
+
+      <h3>Looping no longer automatic</h3>
+      <p>
+      Looping is now an explicit behavior. The player must put a repeat block over the instructions to be repeated, or the player can attach an “infinity” qualifier to a verb. Unless stated otherwise, actions are now performed only once.
+      </p>
+
+      <h3>Fun special actions</h3>
+      <p>
+      We made the game less frustrating and more fun by adding in the rainbow, tornado and flashlight action. Rainbow flies the avatar to a different screen in the game, tornado consumes all the strawberries in a short radius, and flashlight scares away rats that are trying to steal the avatar’s strawberries.
+      </p>
+
+      <h3>Real time projection coding</h3>
+      <p>
+      The previous version of the game would perform actions as soon as blocks were slid in front of the screen. We wanted to keep the responsive nature of the game, but also reduce the reactiveness. We added a level of immediacy between what is in front of the iPad and what the avatar performs by implementing a projection of the avatar’s actions. Sliding blocks in front of the iPad affects the projection, but the player must tap on the screen to have the avatar perform the actions.
+      </p>
+
+      <h3>Adding a farmland</h3>
+      <p>
+      To give users an idea of progression and ownership, we added a separate farm game which can be populated with fruit bearing plants by collecting strawberries in the main game. The fruit dropped by the plants can be collected by tapping, which offers a break from the sometimes frustrating main game.
+      </p>
+
+      <h2>Further Iterative Refinements</h2>
+      <p>
+      I am not too sure how to give structure to these tiny refinements, will just list as bullet point for now.
+      </p>
+      <ul style="padding: 12pt;">
+      <li>added leaf wiggle to trees when they are hit</li>
+      <li>changed scoring system to be more apparent (5 strawberry progress bar at the bottom)</li>
+      <li>added dirt lines in the farm game to give a clear sense of progression</li>
+      <li>added tapping elements to the game to invoke a sense of empowerment over randomness</li>
+      <li>changed the design of several blocks. walk had an arrow, which suggested direction</li>
+      <li>added a little window in the UI which shows the camera feed and what is being recognized</li>
+      <li>added a random number qualifier that could attach to verbs</li>
+      <li>tweaked many little variables to produce a fun and challenging game</li>
+      </ul>
 
       <h1>Evaluation</h1>
       <p>
-      Talk about how we tested the designs at the two elementary schools and what
-      we learned from testing. 
+      We brought the game for six play sessions to two preK - 6 schools. We tested the game in two environments: a closed off space with two children, and an open environment with many kids coming and going. Through these play sessions, the consistent observation is that the game is fun and addictive. Most play testers wanted to play more when asked told that their time was up. Our sessions were divided into 20-30 minute slots. The idea of growing their farm and tapping on increasingly more strawberries proved motivating. The graphics of the game were also polished, giving the children a familiar form (to their other iPad games).
+      </p>
+      <p>
+      The current iteration of the game is playable and fun. By refining these elements, the benefit of tangible programming becomes clear. Collaborative phrases such as “can you pass me this block”, “don’t do that, I want to do this”, “we need to bring him down, do you see anything” are common as teams of play testers work towards a common goal. Physical collaboration is also common: for example, holding back another’s hand or moving an undesired piece outside of the camera range.
+      </p>
+      <p>
+      When the play sessions were in open spaces, there were two occurrences of children coming up and asking what the blocks were. Once the children who came up started to play, other children would join in. When we tested in the open area, a group of 5 students eventually came to form around the iPad. We observed that though it was 5 students around 1 iPad screen, none of the children appeared bored. There were always pieces in front of them that they could play with, or slide in and out of the iPad. 
+      </p>
+      <p>
+      Without the a tutorial of any sort, the children would interact with the blocks in very different ways. One boy in Grade 3 turned the block to face the iPad screen, so that the word “Walk” was facing the avatar on screen, and not himself. Another child thought that tapping on the block would send a signal to the iPad. However, with some hints (which can be replaced by tutorials), the children understood the how the tangible blocks worked without any more hints. Young children (ages 4-5) were able to remember the names of blocks such as rainbow and walk, despite not being able to read them initially.
+      </p>
+      <p>
+      A common behavior was to use only single actions. This was observed for young as well as older children (ages 4-10). While we do not believe that this is an undesirable behavior as the children are learning the game and connecting blocks to actions, we are experimenting with ways for the next iteration to eventually encourage the players to use longer blocks and plan more strategically. 
       </p>
 
-      <h1>Conclusion</h1>
-      <p>
-      Some closing thoughts about why tangible programming is a cool approach.
-      </p>
-      
-     
       <h1>Acknowledgements</h1>
       <p>
-      Here we want to thank anyone that helped you with artwork, design, equipment. 
-      We also want to thank the schools where you did testing. 
+      Omitted for blind review. 
       </p>
 
+Kafai computational participation.
+Marina's papers
+David Weintrop
+Gross.
       
       <h1>References</h1>
       <ol class="references">
-        <li id="centola-2000">Centola, D., Wilensky, U., &amp; McKenzie, E. (2000).
-        Survival of the groupiest: Facilitating students' understanding of the multiple
-        levels of fitness through multi-agent modeling&mdash;The EACH project.
-        <i>The Interjournal Complex Systems, 337.</i></li>
-        <li id="chi-2012">Chi, M.T.H., Kristensen, A.K., &amp; Roscoe, R.
-          (2012). Misunderstanding emergent causal mechanism in natural
-          selection. In K. Rosengren, S. Brem, &amp; G. Sinatra (Eds.), <i>Evolution
-            Challenges: Integrating Research and Practice in Teaching and
-            Learning about Evolution</i> (pp. 145-173). Oxford University Press.</li>
-        <li id="dickes-2012">Dickes, A.C., &amp; Sengupta, P. (2012). Learning
-          Natural Selection in 4th Grade With Multi-Agent-Based Computational
-          Models. <i>Research in Science Education,</i> 1-33. </li>
-        <li id="horn-2011">Horn, M.S., &amp; Wilensky, U. (2011). NetTango
-          [computer software]. Evanston, IL: Center for Connected Learning and
-          Computer-Based Modeling, Northwestern University.</li>
-        <li id="horwitz-2013">Horwitz, P., McIntyre, C. A., Lord, T. L.,
-          O'Dwyer, L. M., &amp; Staudt, C. (2013). Teaching "Evolution
-          readiness" to fourth graders. <i>Evolution: Education and Outreach, 6</i>(1),
-          21.</li>
-        <li id="kahn-2012">Kahn, K., Noble, H., Hjorth, A., &amp; Sampaio, F.F
-          (2012). Three-minute Constructionist Experiences. In <i>Proc.
-            Constructionism</i>. </li>
-        <li id="klopfer-2009">Klopfer, E., Scheintaub, H., Huang, W., &amp;
-          Wendel, D. (2009). StarLogo TNG. In <i>Artificial Life Models in
-            Software</i>, 151-182.</li>
-        <li id="levy-2009">Levy, S. T., &amp; Wilensky, U. (2009). Crossing
-          levels and representations: The Connected Chemistry (CC1) curriculum.
-          <i>Journal of Science Education and Technology, 18</i>(3), 224-242.</li>
-        <li id="miller-2006">Miller, J.D., Scott, E.C., &amp; Okamoto, S.
-          (2006). Public acceptance of evolution. <i>Science, 313</i>, 765-766.</li>
         <li id="nrc-2011">National Research Council. (2011). <i>Report of a
             Workshop of Pedagogical Aspects of Computational Thinking.</i>
           Washington, D.C.: The National Academies Press.</li>
         <li id="papert-1980">Papert, S. (1980). <i>Mindstorms: Children,
             computers, and powerful ideas.</i> New York: Basic books.</li>
-        <li id="parnafes-2004">Parnafes, O., &amp; diSessa, A. (2004). Relations
-          between types of reasoning and computational representations. <i>International
-            Journal of Computers for Mathematical Learning, 9</i>(3), 251-280.</li>
         <li id="resnick-2009">Resnick, M., Maloney, J., Monroy-Hernández, A.,
           Rusk, N., Eastmond, E., Brennan, K., Millner, A., Rosenbaum, E.,
           Silver, J., Sliverman, B. &amp; Kafai, Y. (2009). Scratch: programming
           for all. <i>Communications of the ACM, 52</i>(11), 60-67.</li>
-        <li id="roque-2007">Roque, R.V. (2007). OpenBlocks: an extendable
-          framework for graphical block programming systems (Doctoral
-          dissertation, Massachusetts Institute of Technology).</li>
-        <li id="rosengren-2012">Rosengren, K. S., Brem, S. K., Evans, E. M.,
-          &amp; Sinatra, G. M. (Eds.). (2012). <i>Evolution challenges:
-            Integrating research and practice in teaching and learning about
-            evolution.</i> Oxford.</li>
-        <li id="sengupta-2009">Sengupta, P., &amp; Wilensky, U. (2009). Learning
-          electricity with NIELS: Thinking with electrons and thinking in
-          levels. <i>International Journal of Computers for Mathematical
-            Learning, 14</i>(1), 21-50.</li>
-        <li id="sherin-1993">Sherin, B., diSessa, A., &amp; Hammer, D.
-          (1993). Dynaturtle revisited: Learning physics through collaborative
-          design of a computer model. <i>Interactive Learning Environments, 3</i>(2),
-          91-118.</li>
-        <li id="wagh-2012a">Wagh, A. &amp; Wilensky, U. (2012). Evolution in
-          blocks: Building models of evolution using blocks. In <i>Proc.
-            Constructionism 2012</i>. </li>
-        <li id="wagh-2012b">Wagh. A. &amp; Wilensky, U. (2012). Breeding birds
-          to learn about artificial selection: Two birds with one stone? In <i>Proc.
-          International Conference of the Learning Sciences (ICLS'12)</i>.</li>
         <li id="weintrop-2013">Weintrop, D., &amp; Wilensky, U. (2013).
           RoboBuilder: A Computational Thinking Game. In <i>Proc. ACM Technical
           Symposium on Computer Science Education</i>, 736-736.</li>
-        <li id="wilensky-1999">Wilensky, U. (1999). NetLogo [computer software].
-          Evanston, IL: Center for Connected Learning and Computer-Based
-          Modeling, Northwestern University.
-          http://ccl.northwestern.edu/netlogo.</li>
-        <li id="wilensky-1999a">Wilensky, U., &amp; Resnick, M. (1999). Thinking
-          in Levels: A Dynamic Systems Approach to Making Sense of the World. <i>Journal
-            of Science Education and Technology, 8</i>(1), 3-19.</li>
-        <li id="wilensky-2010">Wilensky, U., &amp; Novak, M. (2010).
-          Understanding evolution as an emergent process: learning with
-          agent-based models of evolutionary dynamics. In R.S. Taylor &amp; M.
-          Ferrari (Eds.), <i>Epistemology and Science Education: Understanding
-            the Evolution vs. Intelligent Design Controversy.</i> Routledge.</li>
-        <li id="wilensky-papert-2010">Wilensky, U., &amp; Papert, S. (2010).
-          Restructurations: Reformulations of Knowledge Disciplines through new
-          representational forms. In <i>Proc. Constructionism 2010</i>.</li>
-        <li id="wilensky-2006">Wilensky, U. &amp; Reisman, K. (2006). Thinking
-          like a wolf, a sheep or a firefly: Learning biology through
-          constructing and testing computational theories. <i>Cognition and
-            Instruction, 24</i>(2), 171-209.</li>
-        <li id="wilkerson-jerde-2010">Wilkerson-Jerde, M. &amp; Wilensky, U.
-          (2010). Deltatick: Using agent-based modeling to learn the calculus of
-          complex systems. In <i>Proc. Constructionism 2010</i>.</li>
-        <li id="wing-2006">Wing, J. M. (2006). Computational thinking. <i>Communications
-            of the ACM, 49</i>(3), 33-35.</li>
-        <li id="xiang-2010">Xiang, L., &amp; Passmore, C. (2010). The Use of an
-          Agent-Based Programmable Modeling Tool in 8th Grade Students'
-          Model-Based Inquiry. <i>Journal of the Research Center for
-            Educational Technology, 6</i>(2), 130-147.</li>
       </ol>
     </div>
     <div id="reference-details"></div>
