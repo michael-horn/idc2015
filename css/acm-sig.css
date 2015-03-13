@@ -33,7 +33,7 @@ body {
 
 .page-footer:before {
    counter-increment: page;
-   /* content: counter(page); */
+   content: counter(page);
    position: absolute;
    width: 7in;
    height: 0.25in;
