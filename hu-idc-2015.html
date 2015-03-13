@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='UTF-8'>
-    <title>Strawbies Tangible Programming Game for Young Children</title>
+    <title>Strawbies (IDC 2015)</title>
     <link rel="stylesheet" type="text/css" href="css/acm-sig.css">
     <link rel="stylesheet" media="print" type="text/css" href="css/acm-sig-print.css">
     <script src="js/cssregions.js"></script>
@@ -52,7 +52,7 @@
         <div id="citation"> </div>
         
         
-        <div class="title">Strawbies Tangible Programming Game</div>
+        <div class="title">Strawbies: Explorations in Tangible Programming </div>
 
         <div class="authors">Author 1, Author 2, Author 3</div>
         
@@ -78,10 +78,9 @@
         <div class="column left" style="height: 6.3in;"></div>
         <div class="column right" style="height: 3.4in;"></div>
         <figure id="figure1">
-          <div style="background-color: #ccc; width: 3.33in; height: 3.75in;">FIG 1</div>
+          <img src="figures/figure1.png" style="width: 3.33in; height: 3.75in" alt="">
           <figcaption>
-            Figure 1. Children playing with Strawbies using tangible tiles, iPad, and Osmo
-            attachment.
+            Figure 1. Children playing with Strawbies using tangible tiles, an iPad, and the Osmo attachment.
           </figcaption>
         </figure>
 
@@ -96,9 +95,7 @@
         <figure id="figure2">
           <img src="figures/figure2.png" style="width: 3.33in; height: 4.44in" alt="">
           <figcaption>
-            Figure 2. Screen shot of the iPad game. The game shows an image from the front camera to help reinforce the link between the tangible programming tiles and Awbie's movement in the world (top left). We also use arrows
-            and icons to give children a preview of what will happen when their program is 
-            played. 
+            Figure 2. Screen shot of the iPad game. The game shows an image from the front camera to help reinforce the link between the tangible programming tiles and Awbie's movement in the world (top left). We use arrows and icons to preview what will happen programs are played. 
           </figcaption>
         </figure>
         <div class="column left" style="height: 3.85in; margin-top: 5.4in"></div>
@@ -114,7 +111,7 @@
         <figure id="figure3">
           <img src="figures/figure3.png" style="width: 7in; height: 2.25in" alt="">
           <figcaption>
-            Figure 2. Collection of programming tiles available to guide the character in search of stawberries.
+            Figure 3. Collection of programming tiles available to guide the character in search of stawberries.
           </figcaption>
         </figure>
 
@@ -134,7 +131,7 @@
         <figure id="figure4">
           <img src="figures/figure4.png" style="width: 7in; height: 2.5in" alt="">
           <figcaption>
-            Figure 4. We have developed four major revisions of the game that we have tested with children, parents, teachers, and other users.
+            Figure 4. We have developed four major revisions of the game that we have tested with children, parents, teachers.
           </figcaption>
         </figure>
 
@@ -165,6 +162,8 @@
       <p>
       In this demo we present Strawbies, a tangible programming game designed for children ages 4 to 7. Strawbies is an iPad app that features Awbie, a character that children guide through a virtual world using wooden programming tiles (Figures 1, 2, 3). Our system combines the TopCode computer vision library [TOPCODES] with the Osmo play system [OSMO] to allow for real-time recognition of programs that children construct on a flat surface in front of the iPad (Figure 1). This results in an inexpensive, engaging, and portable tangible programming environment.  Our design process has involved five major revisions of the game that were tested with children, parents, and teachers (see Figure 4). 
       </p>
+      <img src="figures/awbie.png" alt="awbie eats strawbies" style="width: 1.8in; padding-left: 0.75in; position: relative; top: 0.15in;"/>
+
 
       <h1>Design Principles</h1>
       <p>
@@ -180,16 +179,19 @@
       <b>3. Simple+Complex:</b> As with prior work on the development of programming environments for informal learning settings [Horn, Horn, CMU], we wanted to create a system that was simple enough for children as young as four years old to figure out on their own with little or no instruction. However, we had to balance this goal of simplicity against the ability to create relatively sophisticated programs that could lead to complex behavioral outcomes for Awbie.
       </p>
       <p>
-      <b>4. Developmentally Appropriate:</b> We wanted to ensure that the content of our game was accessible to our target audience and that the game play was appropriate for children's cognitive, perseptual-motor, and social ability. To ensure that we achieved this, we conducted multiple rounds of testing with children in our target age range. 
+      <b>4. Fluid and Responsive:</b> SOMETHING HERE ABOUT REAL TIME
       </p>
       <p>
-      <b>5. Pedagogically Aligned:</b> One of the greatest challenges facing the adoption of developmenally appropriate technology in classrooms is that teachers must feel comfortable and confident with the technology themselves [CUBAN]. This includes making sure that technology aligns with the pedagogical philosophy of early childhood educators, a philosophy that emphasizes rich sensory-motor experiences, open-ended exploration, and social interaction. We see the use of tangible technology as an excellent way to introduce computational thinking activities in a way that evokes familiar cultural forms of teaching and learning [Horn]. 
+      <b>5. Developmentally Appropriate:</b> We wanted to ensure that the content of our game was accessible to our target audience and that the game play was appropriate for children's cognitive, perseptual-motor, and social ability. To ensure that we achieved this, we conducted multiple rounds of testing with children in our target age range. 
       </p>
       <p>
-      <b>6. Social:</b> Along the lines of the previous design principles, we sought to design an activity that was inherently social in nature in that it would invite multiple children into the game, allow them to easily distribute their activity in collaborative play, and create space for multiple hands and bodies. 
+      <b>6. Pedagogically Aligned:</b> One of the greatest challenges facing the adoption of developmenally appropriate technology in classrooms is that teachers must feel comfortable and confident with the technology themselves [CUBAN]. This includes making sure that technology aligns with the pedagogical philosophy of early childhood educators, a philosophy that emphasizes rich sensory-motor experiences, open-ended exploration, and social interaction. We see the use of tangible technology as an excellent way to introduce computational thinking activities in a way that evokes familiar cultural forms of teaching and learning [Horn]. 
       </p>
       <p>
-      <b>Adaptable:</b> The difference in ability of a four-year-old and a seven-year-old child can be dramatic. In developing the game, we sought to create an activity that could grow with the child, perhaps with the proximal assistance of an adult or older child. For example, for pre-literate children, it might be necessary to read text out loud to help children interpret meaning and understand the graphical elements of the blocks. Or, teachers might choose to remove some of the blocks (such as the event triggers) from the activity until a child has mastered the more basic concepts. This is one example of the flexibility that tangibles afford&mdash;no customization of the software is necessary to instantly adapt the activity. 
+      <b>7. Social:</b> Along the lines of the previous design principles, we sought to design an activity that was inherently social in nature in that it would invite multiple children into the game, allow them to easily distribute their activity in collaborative play, and create space for multiple hands and bodies. 
+      </p>
+      <p>
+      <b>8. Adaptable:</b> The difference in ability of a four-year-old and a seven-year-old child can be dramatic. In developing the game, we sought to create an activity that could grow with the child, perhaps with the proximal assistance of an adult or older child. For example, for pre-literate children, it might be necessary to read text out loud to help children interpret meaning and understand the graphical elements of the blocks. Or, teachers might choose to remove some of the blocks (such as the event triggers) from the activity until a child has mastered the more basic concepts. This is one example of the flexibility that tangibles afford&mdash;no customization of the software is necessary to instantly adapt the activity. 
       </p>
 
       <h1>Related Work</h1>
@@ -197,99 +199,50 @@
       Our project builds on a long and rapidly growing tradition of programming environments for young children [Papert, diSessa, Weintrop, ScratchJR, Montemayor, Wyeth, Dr.Wagon, Tern, Stickers, Scratch, Logo] (see also [McNerney] for an excellent account of older work dating back to the 1970s). There is also growing momentum around the idea of supporting computational literacy activities throughout K-12 education and starting at the earliest grade levels. Our project contributes to this space by improving the flexibility, portability, and practicality of tangible programming for young children. 
       </p>
 
-      <h1>Design Iterations</h1>
-
-      <h2>Exploring developing for the Osmo</h2>
+      <h1>Design &amp; Evaluation</h1>
       <p>
-      This version had two goals: making image recognition reliable and quick, and designing the blocks. The design of the blocks had several specifications. Connected blocks should slide around easily while maintaining structural integrity. Blocks should be easily insertable and removable at any point in the code. Blocks should also allow for customization, looping, and if/then logic. 
+      Our design process involved several major revisions in which we explored different approaches and ideas for the iPad app and the tangible programming tiles. For the programming tiles, we wanted to make sure that blocks were easy to assemble and disassemble while also making sure that connected programs could be dragged around the table without falling apart. For programs, we included parameters, loops, and if/then logic. The blocks were split into several categories: verbs, adverbs and units of measurement. Verb blocks begin the start of each line of code, and the player can attach adverbs and units of measurements to the verb. For example: <code>walk (verb) + 5 inches (unit) + right (adverb)</code>. Verbs slide in and out of other verbs conveniently, while units and adverbs attach to verbs like puzzle pieces. Each string of verbs could start with an <code>Always</code> block (for looping behavior) or a <code>When</code> block (for if/then logic). Due to the limited field of vision of the Osmo and its more intuitive nature, we chose to use event-driven logic over sequential logic.
+      </p>
+
+      <h2 class="no-number">Version 1: Puzzle Based</h2>
+      <p>
+      Our first game iteration consisted of a series of puzzles, much like code.org’s Learn Programming series. From testing, we found that our players were easily frustrated by the game—especially the lower end of our target age range. Puzzles had only two or three possible solutions, and failure meant that players had to restart the puzzle. We felt that the interaction opened up by the Osmo and tangible pieces could be much more playful and open-ended.
       </p>
 
       <p>
-      Image recognition was simplified through the use of TopCodes. The Osmo was a perfect fit for TopCodes, as the image reflected by the Osmo could easily be distorted such that the codes were orthogonal to the camera. Using TopCodes provided reliable and responsive image recognition painlessly.
+      Our screen layout was also influenced by Scratch Jr. and other tablet coding games that do not use tangible pieces. Half of the screen was, therefore, dedicated to showing what the iPad was reading. This was unnecessary, as the physical code blocks in front of the iPad is an extension of the UI.
+      </p>
+
+      <h2 class="no-number">Version 2: Open World Environment</h2>
+      <p>
+      Realizing that the physical representation of programming tiles did not require screen real estate opened possibilities. Responding to user testing, we created an open world game in which the goal was to harvest “Strawbies”. Because we wanted to create a fluid and responsive game that reacted in real time to kids' programs, every block that was recognized by the system would be immediately added to a pool of actions that the avatar could perform. The game would randomly chose from all tiles in front of the iPad and perform that action. 
       </p>
 
       <p>
-      We went through numerous versions of these physical blocks before settling on a design which fulfilled all of our requirements. The blocks were split into several categories: verbs, adverbs and units of measurement. Verb blocks begin the start of each line of code, and the player can attach adverbs and units of measurements to the verb. For example: walk (verb) + 5 inches (unit) + right (adverb). Verbs slide in and out of other verbs conveniently, while units and adverbs attach to verbs like puzzle pieces. Each string of verbs could start with an Always block (for looping behavior) or a When block (for if/then logic). Due to the limited field of vision of the Osmo and its more intuitive nature, we chose to use event driven logic over sequential logic.
+      The structure of the game was provided by obstacles: water, trees, and bats. Trees obstruct movement, while contact with water or bats caused the game to end. Players could add events triggered by obstacles (“When water is in front, turn 90 degrees right and walk”).
       </p>
 
       <p>
-      The game itself was a series of puzzles, much like code.org’s Learn Programming series. From testing, we found that our players were easily frustrated by the game—especially the lower end of our target age (4-10). Puzzles had only two or three possible solutions, and failure meant you had to restart the puzzle. We felt that the interaction opened up by the Osmo and tangible pieces allowed for more benefits than just the benefits typically associated with tangible programming, and we wanted to drastically rethink the game.
+      This game was better received by players, but there were a few issues. Blocks had too many qualifiers; a line of code could require up to three different blocks. The game was also too challenging for children as well as adults. Furthermore, collecting strawberries did not appear motivating enough to engage players in deeper explorations of programming concepts. 
       </p>
 
-      <p>
-      The UI layout was influenced by Scratch and other tablet coding games which did not use tangible pieces. Half of the screen was dedicated to showing what the iPad was reading. This was unnecessary, as the physical code blocks in front of the iPad is an extension of the UI.
-      </p>
 
-      <h2>Creating an Open World Environment</h2>
-      <p>
-      Realizing that the physical representation did not need to show up on screen opened up a lot of possibilities. Going off of testing which showed that puzzles with a binary answers was frustrating, we made an open world game where the goal was more open-ended (find “Strawbies”), and the solution even more so. We dedicated the entire tablet screen to the game itself.
-      </p>
 
+      <h2 class="no-number">Version 3: Refining the Open World Game</h2>
       <p>
-      We wanted to create a fluid and responsive game. This version reacted in real time to what was in front of the screen. Every block that was slid in front of the screen would be immediately added to a pool of actions that the avatar would do. The game randomly chooses from all available sets of instructions in front of the iPad, and performs the action. If a block was lacking qualifiers (for example: walk + 2 inches + ???), the game would pick one of the possible qualifiers automatically. 
+      In this version, we kept the open world concept and made additional refinements to improve fun and playability. We started by simplifying the action blocks and removing required qualifiers. 
+      Player can instead attach numbers to verbs to increase the number of times an action is performed.
+      We also added room for graphical symbols on each block to increase the accessibility for young children. 
+      In this version, we also made looping an explicit block that can be used to cause actions to be repeated more than only once.
+      To make the game less frustrating and more fun we added three special action blocks: rainbow, tornado and flashlight action. 
+      The rainbow flies the avatar to a different place in the world, tornado consumes all the strawberries in a short radius, and flashlight scares away rats that are trying to steal the avatar’s strawberries.
+      To give users an idea of progression and ownership, we added a separate farm game-within-a-game. As players collect strawberries, they can start to grow fruit bearing plants in a garden. 
       </p>
-
-      <p>
-      The game was open world and randomly generated. The structure for the game was provided by obstacles: water, trees and bats. Trees obstruct movement, and contact with water or bats causes the game to end. Players could add events that are triggered by obstacles. A possible even could be “When water is in front, turn 90 degrees right and walk”.
-      </p>
-
-      <p>
-      This game was better received by players, but a few play sessions exposed a few issues. Blocks had too many qualifiers, a line of code can require up to three different blocks. The game was too challenging, for adults and children, and also far too reactive. Furthermore, collecting strawberries was not enough of a motivation.
-      </p>
-
-      <h2>Refining the Open World Game</h2>
-      <p>
-      In this version, we kept the open world concept as it showed optimistic results in testing. We made refinements many points in the game to improve the fun and playability of the game.
-      </p>
-
-      <h3>Simpler Blocks</h3>
-      <p>
-      We kept the same verb + qualifier structure, but we reduced each action to require no qualifiers. For example, the verbs are now: walk, turn left/right and special action words. The player can attach a number to verbs, which increases the number of times the action is performed.
-      </p>
-
-      <h3>Added symbols to blocks</h3>
-      <p>
-      We kept the features of the blocks, but redesigned them so there was room for symbols for each block. We added recognizable symbols to each block, as our target age range includes children not yet confident in literacy.
-      </p>
-
-      <h3>Looping no longer automatic</h3>
-      <p>
-      Looping is now an explicit behavior. The player must put a repeat block over the instructions to be repeated, or the player can attach an “infinity” qualifier to a verb. Unless stated otherwise, actions are now performed only once.
-      </p>
-
-      <h3>Fun special actions</h3>
-      <p>
-      We made the game less frustrating and more fun by adding in the rainbow, tornado and flashlight action. Rainbow flies the avatar to a different screen in the game, tornado consumes all the strawberries in a short radius, and flashlight scares away rats that are trying to steal the avatar’s strawberries.
-      </p>
-
-      <h3>Real time projection coding</h3>
-      <p>
-      The previous version of the game would perform actions as soon as blocks were slid in front of the screen. We wanted to keep the responsive nature of the game, but also reduce the reactiveness. We added a level of immediacy between what is in front of the iPad and what the avatar performs by implementing a projection of the avatar’s actions. Sliding blocks in front of the iPad affects the projection, but the player must tap on the screen to have the avatar perform the actions.
-      </p>
-
-      <h3>Adding a farmland</h3>
-      <p>
-      To give users an idea of progression and ownership, we added a separate farm game which can be populated with fruit bearing plants by collecting strawberries in the main game. The fruit dropped by the plants can be collected by tapping, which offers a break from the sometimes frustrating main game.
-      </p>
-
-      <h2>Further Iterative Refinements</h2>
-      <p>
-      I am not too sure how to give structure to these tiny refinements, will just list as bullet point for now.
-      </p>
-      <ul style="padding: 12pt;">
-      <li>added leaf wiggle to trees when they are hit</li>
-      <li>changed scoring system to be more apparent (5 strawberry progress bar at the bottom)</li>
-      <li>added dirt lines in the farm game to give a clear sense of progression</li>
-      <li>added tapping elements to the game to invoke a sense of empowerment over randomness</li>
-      <li>changed the design of several blocks. walk had an arrow, which suggested direction</li>
-      <li>added a little window in the UI which shows the camera feed and what is being recognized</li>
-      <li>added a random number qualifier that could attach to verbs</li>
-      <li>tweaked many little variables to produce a fun and challenging game</li>
-      </ul>
 
       <h1>Evaluation</h1>
       <p>
-      We brought the game for six play sessions to two preK - 6 schools. We tested the game in two environments: a closed off space with two children, and an open environment with many kids coming and going. Through these play sessions, the consistent observation is that the game is fun and addictive. Most play testers wanted to play more when asked told that their time was up. Our sessions were divided into 20-30 minute slots. The idea of growing their farm and tapping on increasingly more strawberries proved motivating. The graphics of the game were also polished, giving the children a familiar form (to their other iPad games).
+      We brought the game for six play sessions at two preK-6 schools. We tested the game in two environments: a closed off space with two children at a time, and an open environment with many kids coming and going. 
+      Through these play sessions, the consistent observation is that the game is fun and engaging. Most play testers wanted to play more when asked told that their time was up. Our sessions were divided into 20-30 minute slots. The idea of growing a gardent of strawberry plants and and tapping on increasingly more strawberries seemed motivating. 
       </p>
       <p>
       The current iteration of the game is playable and fun. By refining these elements, the benefit of tangible programming becomes clear. Collaborative phrases such as “can you pass me this block”, “don’t do that, I want to do this”, “we need to bring him down, do you see anything” are common as teams of play testers work towards a common goal. Physical collaboration is also common: for example, holding back another’s hand or moving an undesired piece outside of the camera range.
@@ -316,6 +269,13 @@ Gross.
       
       <h1>References</h1>
       <ol class="references">
+      <li id="bers-2008">Bers, M. (2008). <i>Blocks to Robots: Learning with Technology in the Early Childhood Classroom</i>. Teachers College Press.</li> 
+      <li id="disessa-2000">diSessa, A. (2000). <i>Changing Minds: Computers, Learning, and Literacty.</i> MIT Press.</li>
+      <li id="horn-2012">Horn, M.S., Crouser, R.J., & Bers, M.U. (2012). Tangible interaction and learning: The case for a hybrid approach. <i>Pers. and Ubiq. Computing, 16</i>(4), 379-389.</li>
+      <li id="mcnerney-2004">McNerney, T. (2004). From turtles to tangible programming bricks: explorations in physical language design. <i>Pers. and Ubiq. Computing, 8</i>(5), 326-337.</li>
+      <li id="montemayor-2004">Montemayor, J., Druin, A., Chipman, G., Farber, A., & Guha, M.L. (2004). Tools for children to create physical interactive StoryRooms. <i>Computers in Entertainment: Educating children through entertainment Part II, 2</i>(1). </li>
+      <li id="papert-1980">Papert, S. (1980). <i>Mindstorms: Children, Computers, and Powerful Ideas.</i> New York: Basic Books. </li>
+
         <li id="nrc-2011">National Research Council. (2011). <i>Report of a
             Workshop of Pedagogical Aspects of Computational Thinking.</i>
           Washington, D.C.: The National Academies Press.</li>
@@ -328,6 +288,8 @@ Gross.
         <li id="weintrop-2013">Weintrop, D., &amp; Wilensky, U. (2013).
           RoboBuilder: A Computational Thinking Game. In <i>Proc. ACM Technical
           Symposium on Computer Science Education</i>, 736-736.</li>
+      <li id="wyeth-2008">Wyeth, P. (2008). How young children learn to program with sensor, action, and logic blocks. <i>Journal of the Learning Sciences, 17</i>(4), 517-550.</li> 
+
       </ol>
     </div>
     <div id="reference-details"></div>
