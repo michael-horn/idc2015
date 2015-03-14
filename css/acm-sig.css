@@ -271,7 +271,7 @@ figure table td {
    margin: 0 0 2pt 0;
   padding-left: 0.25in;
   padding-bottom: 2pt;
-  font-size: 8.5pt;
+  /* font-size: 8.5pt; */
   word-spacing: -0.2pt;
   letter-spacing: -0.1pt;
   line-height: 120%;
