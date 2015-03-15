@@ -189,7 +189,7 @@ h2.no-number:before {
    padding: 6pt 0 0 0;
    position: absolute;
    left: 0;
-   bottom: 0;
+   bottom: 1pt;
    width: 3.33in;
    color: #333;
    line-height: 110%;

@@ -22,6 +22,10 @@
   border: none;
 }
 
+.page-footer {
+  display: none;
+}
+
 .pub-css {
    display: none;
 }
