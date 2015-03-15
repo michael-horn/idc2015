@@ -76,7 +76,7 @@ function generateReferenceList() {
       if (REFERENCES[tag]) {
          cite.innerHTML = REFERENCES[tag];
       }
-      cite.onmouseover = showRef;
-      cite.onmouseout = hideRef;
+      //cite.onmouseover = showRef;
+      //cite.onmouseout = hideRef;
    }
 }
