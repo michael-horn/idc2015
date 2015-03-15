@@ -160,7 +160,7 @@
       
       <h1>Introduction</h1>
       <p>
-      In this demo we present Strawbies, a tangible programming game designed for children ages 5 to 10. Strawbies is an iPad app that features Awbie, a character that children guide on a quest for strawberries through a virtual world using wooden programming tiles (Figures 1, 2, 3). Our system combines the TopCode computer vision library [TOPCODES] with the Osmo play system [OSMO] to allow for real-time recognition of programs that children construct on a flat surface in front of the iPad (Figure 1). This results in an inexpensive, engaging, and portable tangible programming environment.  Our design process has involved three major revisions of the game that we tested with children, parents, and teachers (see Figure 4). 
+      In this demo we present Strawbies, a tangible programming game designed for children ages 5 to 10. Strawbies is an iPad app that features Awbie, a character that children guide on a quest for strawberries through a virtual world using wooden programming tiles (Figures 1, 2, 3). Our system combines the TopCode computer vision library [<cite ref="topcodes"></cite>] with the Osmo play system [<cite ref="osmo"></cite>] to allow for real-time recognition of programs that children construct on a flat surface in front of the iPad (Figure 1). This results in an inexpensive, engaging, and portable tangible programming environment.  Our design process has involved three major revisions of the game that we tested with children, parents, and teachers (see Figure 4). 
       </p>
       <img src="figures/awbie.png" alt="awbie eats strawbies" style="width: 1.6in; padding-left: 0.75in; position: relative; top: 0.2in;"/>
 
@@ -173,19 +173,19 @@
       <b>1. Inviting:</b> Through the use of tangible programming tiles, we hoped to create an inviting experience that would draw children into collaborative play. The use of tangibles increases the visibility of game play, allowing it to move beyond the screen and spill out into the real world. In our testing sessions, children would often notice the game from across the room.
       </p>
       <p>
-      <b>2. Playful and Open-Ended:</b> In the spirit of many children's programming environments [PAPERT, ETC], we wanted to support children's open-ended exploration. This led us, over time, to an open-world style of game in which Awbie is free to roam around an infinite, randomly generated landscape. While the game is loosely structured around the task of guiding Awbie to eat and grow straberries, children are free to playfully explore the world in any way they see fit.
+      <b>2. Playful and Open-Ended:</b> In the spirit of many children's programming environments [<cite ref="drwagon13"></cite>, <cite ref="scratchjr13"></cite>, <cite ref="horn-2012"></cite>, <cite ref="montemayor-2004"></cite>, <cite ref="oh-2013"></cite>, <cite ref<cite ref="papert-1980"></cite>, <cite ref="roblocks08"></cite>], we wanted to support children's open-ended exploration. This led us, over time, to an open-world style of game in which Awbie is free to roam around an infinite, randomly generated landscape. While the game is loosely structured around the task of guiding Awbie to eat and grow straberries, children are free to playfully explore the world in any way they see fit.
       </p>
       <p>
-      <b>3. Simple+Complex:</b> As with prior work on the development of programming environments for informal learning settings [Horn, Horn, CMU], we wanted to create a system that was simple enough for children as young as five years old to figure out on their own with little or no instruction. However, we had to balance this goal of simplicity against the ability to create relatively sophisticated programs that would lead to complex behavioral outcomes for Awbie.
+      <b>3. Simple+Complex:</b> As with prior work on the development of programming environments for informal learning settings [<cite ref="horn-2012"></cite>, <cite ref="oh-2013"></cite>], we wanted to create a system that was simple enough for children as young as five years old to figure out on their own with little or no instruction. However, we had to balance this goal of simplicity against the ability to create relatively sophisticated programs that would lead to complex behavioral outcomes for Awbie.
       </p>
       <p>
-      <b>4. Fluid and Responsive:</b> Tangible programming systems that rely on computer vision have typically had to make tradeoffs between inexpensive materials, portability, and real-time interaction [Horn]. Achieving continuous recognition of tiles usually requires an overhead camera fixture or an interactive surface with built-in camera hardware. It is possible to instead use a mobile device like an iPad, but this requires a point-and-shoot style of interaction (e.g. [Horn'13]). However, with the Osmo's use of a mirror in front of the camera, it is possible to create fluid, real-time interaction with a mobile device and low-cost tangible materials. 
+      <b>4. Fluid and Responsive:</b> Tangible programming systems that rely on computer vision have typically had to make tradeoffs between inexpensive materials, portability, and real-time interaction [<cite ref="horn-2012"></cite>]. Achieving continuous recognition of tiles usually requires an overhead camera fixture or an interactive surface with built-in camera hardware. It is possible to instead use a mobile device like an iPad, but this requires a point-and-shoot style of interaction (e.g. [<cite ref="roberto13"></cite>]). However, with the Osmo's use of a mirror in front of the camera, it is possible to create fluid, real-time interaction with a mobile device and low-cost tangible materials. 
       </p>
       <p>
       <b>5. Developmentally Appropriate:</b> We wanted to ensure that the content of our game was appropriate for our target audience and that the game play was aligned with children's cognitive, perseptual-motor, and social ability. To ensure that we achieved this, we conducted multiple rounds of testing with children in our target age range. 
       </p>
       <p>
-      <b>6. Pedagogically Aligned:</b> One of the greatest challenges facing the adoption of developmenally appropriate technology in classrooms is that teachers must feel comfortable and confident with the materials [CUBAN]. This includes making sure that technology aligns with the pedagogical philosophy of early childhood educators, a philosophy that emphasizes rich sensory-motor experiences, open-ended exploration, and social interaction. We see the use of tangible technology as an excellent way to introduce computational thinking activities in a way that evokes familiar cultural forms of teaching and learning [Horn]. 
+      <b>6. Pedagogically Aligned:</b> One of the greatest challenges facing the adoption of developmenally appropriate technology in classrooms is that teachers must feel comfortable and confident with the materials [<cite ref="cuban-2009"></cite>]. This includes making sure that technology aligns with the pedagogical philosophy of early childhood educators, a philosophy that emphasizes rich sensory-motor experiences, open-ended exploration, and social interaction. We see the use of tangible technology as an excellent way to introduce computational thinking activities in a way that evokes familiar cultural forms of teaching and learning [<cite ref="horn-2013"></cite>]. 
       </p>
       <p>
       <b>7. Social:</b> Along the lines of the previous design principles, we sought to design an activity that was inherently social in nature and that would invite multiple children into the game, allow them to easily distribute their activity in collaborative play, and create space for multiple hands and bodies. 
@@ -196,7 +196,21 @@
 
       <h1>Related Work</h1>
       <p>
-      Our project builds on a long and rapidly growing tradition of programming environments for young children [Papert, diSessa, Weintrop, ScratchJR, Montemayor, Wyeth, Dr.Wagon, Tern, Stickers, Scratch, Logo] (see also [McNerney] for an excellent account of older work dating back to the 1970s). There is also growing momentum around the idea of supporting computational literacy activities throughout K-12 education, starting at the earliest grade levels. Our project contributes to this space by blending the flexibility, portability and practicality of tangible programming with an open-ended formatting, which enables this game to be highly responsive to the spontaneity in early childhood learning.
+      Our project builds on a long and rapidly growing tradition of programming environments for young children 
+      [<cite ref="disessa-2000"></cite>, 
+      <cite ref="scratchjr13"></cite>, 
+      <cite ref="horn-2013"></cite>, 
+      <cite ref="montemayor-2004"></cite>, 
+      <cite ref="oh-2013"></cite>,
+      <cite ref="papert-1980"></cite>, 
+      <cite ref="resnick-2009"></cite>,
+      <cite ref="roblocks08"></cite>,
+      <cite ref="sapounidis-2013"></cite>,
+      <cite ref="sipitakiat-2012"></cite>,
+      <cite ref="weintrop-2013"></cite>,
+      <cite ref="wyeth-2008"></cite>]
+      (see also [<cite ref="mcnerney-2004"></cite>] for an excellent account of older work dating back to the 1970s). 
+      There is also growing momentum around the idea of supporting computational literacy activities throughout K-12 education, starting at the earliest grade levels. Our project contributes to this space by blending the flexibility, portability and practicality of tangible programming with an open-ended formatting, which enables this game to be highly responsive to the spontaneity in early childhood learning.
       </p>
 
       <h1>Design Iterations</h1>
@@ -211,12 +225,12 @@
       </p>
 
       <p>
-      Our screen layout was also influenced by Scratch Jr. and other tablet coding games that do not use tangible pieces. Half of the screen was, therefore, dedicated to showing what the iPad was reading (Figure 4, left). This was unnecessary, as the physical code tiles in front of the iPad is an extension of the UI.
+      Our screen layout was also influenced by ScratchJr. and other tablet coding games that do not use tangible pieces. Half of the screen was, therefore, dedicated to showing what the iPad was reading (Figure 4, left). This was unnecessary, as the physical code tiles in front of the iPad is an extension of the UI.
       </p>
 
       <h2 class="no-number">Version 2: Open World Environment</h2>
       <p>
-      Realizing that the physical representation of programming tiles did not require screen real estate opened possibilities for redesign. Responding to user testing, we created an open world game in which the goal was to harvest “Strawbies”. Because we wanted to create a fluid and responsive game that reacted in real time to kids' programs, every sequence of tiles that was recognized by the system would be immediately added to a pool of actions. The avatar performed actions randomly chosen from the pool of actions. 
+      Realizing that we didn't need to dedicate screen real estate to the physical tiles opened new possibilities for design. Responding to user testing, we created an open world game in which the goal was to harvest “Strawbies”. Because we wanted a game that reacted in real time to kids' programs, every sequence of tiles that was recognized by the system would be immediately added to a pool of actions. The avatar performed actions randomly chosen from the pool of actions. 
       </p>
 
       <p>
@@ -240,10 +254,10 @@
 
       <h1>Evaluation</h1>
       <p>
-      We brought the game for six play sessions at two local schools (PreK - 8th/12th). In each school we tested two types of environments: a closed off space with two children at a time, and an open environment with many kids coming and going. Most play testers wanted to play more when asked told that their time was up. Our sessions were divided into 20-30 minute slots. The ability to find, collect, harvest and protect strawberries proved rewarding and well-rounded. The harvesting and scorekeeping farm became a place for lively and quick-paced spontaneity, in a game of thoughtful strategy.
+      We brought the game for six play sessions at two local schools (PreK-8 / PreK-12). In each school we tested two types of environments: a closed off space with two children at a time, and an open environment with many kids coming and going. Most play testers wanted to play more when asked told that their time was up. Our sessions were divided into 20-30 minute slots. The ability to find, collect, harvest and protect strawberries proved rewarding and well-rounded. The harvesting and scorekeeping farm became a place for lively and quick-paced spontaneity, in a game of thoughtful strategy.
       </p>
       <p>
-      Player phrases such as "Can you pass me this the tornado?" or "Don't do that yet, we're going to the strawberry" revealed their collaborations and social negotiations. Comments such as "We need to bring him down, do you see a down block?" revealed the children were working on common goals. Typical challenges in turn-taking and sharing were also seen such as holding back another’s hand or moving an undesired piece outside of the camera range. This is important social work to take place in childhood and in classroom spaces.
+      Player phrases such as "Can you pass me the tornado?" or "Don't do that yet, we're going to the strawberry" revealed their collaborations and social negotiations. Comments such as "We need to bring him down, do you see a down block?" revealed the children were working on common goals. Typical challenges in turn-taking and sharing were also seen such as holding back another’s hand or moving an undesired piece outside of the camera range. This is important social work to take place in childhood and in classroom spaces.
       </p>
       <p>
       When the play sessions were in open spaces, there were two occurrences of children coming up and asking what the tiles were. Once the children who came up started to play, other children would join in. When we tested in the open area, a group of five students eventually came to form around the iPad. Even though there was five students around one iPad, none of the children seemed bored. There were always pieces in front of them that they could play with, or slide in and out of the iPad's field of view. 
@@ -259,35 +273,34 @@
       <p>
       Omitted for blind review. 
       </p>
-
-Kafai computational participation.
-Marina's papers
-David Weintrop
-Gross.
       
       <h1>References</h1>
       <ol class="references">
+      <!--
       <li id="bers-2008">Bers, M. (2008). <i>Blocks to Robots: Learning with Technology in the Early Childhood Classroom</i>. Teachers College Press.</li> 
+      -->
+      <li id="cuban-2009">Cuban, L. (2009). <i>Oversold and underused: Computers in the classroom</i>. Harvard University Press.</li>
+      <li id="drwagon13">Chawla, K., Chiou, M., Sandes, A., &amp; Blikstein, P. (2013). Dr. Wagon: a 'stretchable' toolkit for tangible computer programming. In <i>Proc. Interaction Design and Children</i> (IDC'13), 561-564.</li>
       <li id="disessa-2000">diSessa, A. (2000). <i>Changing Minds: Computers, Learning, and Literacty.</i> MIT Press.</li>
-      <li id="horn-2012">Horn, M.S., Crouser, R.J., & Bers, M.U. (2012). Tangible interaction and learning: The case for a hybrid approach. <i>Pers. and Ubiq. Computing, 16</i>(4), 379-389.</li>
+      <li id="scratchjr13">Flannery, L.P., Silverman, B., Kazakoff, E.R., Bers, M.U., Bontá, P., &amp; Resnick, M. (2013). Designing ScratchJr: Support for early childhood learning through computer programming. In <i>Proc. Interaction Design and Children</i> (IDC'13), 1-10.</li>
+      <li id="horn-2013">Horn, M.S. (2013). The role of cultural forms in tangible interaction design. In <i>Proc. Tangible, Embedded, and Embodied Interaction</i> (TEI'13).</li>
+      <li id="topcodes">Horn, M. TopCode: Tangible Object Placement Codes. http://users.eecs.northwestern.edu/~mhorn/topcodes/</li>
+      <li id="horn-2012">Horn, M.S., Crouser, R.J., &amp; Bers, M.U. (2012). Tangible interaction and learning: The case for a hybrid approach. <i>Pers. and Ubiq. Computing, 16</i>(4), 379-389.</li>
+      <li id="roberto13">Horn, M.S., AlSulaiman, S., Koh, J. (2013). Translating Roberto to Omar: Computational literacy, stickerbooks, and cultural forms. In <i>Proc. Interaction Design and Children</i> (IDC'13), 120-127.</li>
+      <!-- <li id="horn-2014">Horn, M.S., Weintrop, D., and Routman, E. (2014). Programming in the Pond: A Tabletop Computer Programming Exhibit. In <i>Proc. ACM Human Factors in Computing Systems (CHI'14 extended abstracts).</i></li> -->
+      <!-- <li id="kazakoff-2014">Kazakoff, E.R. &amp; Bers, M.U. (2014). Put your robot in, Put your robot out: Sequencing through programming robots in early childhood.  <i>Journal of Educational Computing Research, 50</i>(4).</li>  -->
       <li id="mcnerney-2004">McNerney, T. (2004). From turtles to tangible programming bricks: explorations in physical language design. <i>Pers. and Ubiq. Computing, 8</i>(5), 326-337.</li>
-      <li id="montemayor-2004">Montemayor, J., Druin, A., Chipman, G., Farber, A., & Guha, M.L. (2004). Tools for children to create physical interactive StoryRooms. <i>Computers in Entertainment: Educating children through entertainment Part II, 2</i>(1). </li>
+      <li id="montemayor-2004">Montemayor, J., Druin, A., Chipman, G., Farber, A., &amp; Guha, M.L. (2004). Tools for children to create physical interactive StoryRooms. <i>Computers in Entertainment: Educating children through entertainment Part II, 2</i>(1). </li>
+      <li id="oh-2013">Oh, H., Deshmane, A., Li, F., Han, J. Y., Stewart, M., Tsai, M., &amp; Oakley, I. (2013). The digital dream lab: tabletop puzzle blocks for exploring programmatic concepts. In <i>Proc. Tangible, Embedded and Embodied Interaction</i> (TEI'13), 51-56.</li>
+      <li id="osmo">Osmo. https://www.playosmo.com</li>
       <li id="papert-1980">Papert, S. (1980). <i>Mindstorms: Children, Computers, and Powerful Ideas.</i> New York: Basic Books. </li>
-
-        <li id="nrc-2011">National Research Council. (2011). <i>Report of a
-            Workshop of Pedagogical Aspects of Computational Thinking.</i>
-          Washington, D.C.: The National Academies Press.</li>
-        <li id="papert-1980">Papert, S. (1980). <i>Mindstorms: Children,
-            computers, and powerful ideas.</i> New York: Basic books.</li>
-        <li id="resnick-2009">Resnick, M., Maloney, J., Monroy-Hernández, A.,
-          Rusk, N., Eastmond, E., Brennan, K., Millner, A., Rosenbaum, E.,
-          Silver, J., Sliverman, B. &amp; Kafai, Y. (2009). Scratch: programming
-          for all. <i>Communications of the ACM, 52</i>(11), 60-67.</li>
-        <li id="weintrop-2013">Weintrop, D., &amp; Wilensky, U. (2013).
-          RoboBuilder: A Computational Thinking Game. In <i>Proc. ACM Technical
-          Symposium on Computer Science Education</i>, 736-736.</li>
+      <!-- <li id="nrc-2011">National Research Council. (2011). <i>Report of a Workshop of Pedagogical Aspects of Computational Thinking.</i> Washington, D.C.: The National Academies Press.</li> -->
+      <li id="resnick-2009">Resnick, M., Maloney, J., Monroy-Hernández, A., Rusk, N., Eastmond, E., Brennan, K., Millner, A., Rosenbaum, E., Silver, J., Sliverman, B. &amp; Kafai, Y. (2009). Scratch: programming for all. <i>Communications of the ACM, 52</i>(11), 60-67.</li>
+      <li id="roblocks08">Schweikardt, E., &amp; Gross, M.D. (2008). The robot is the program: interacting with roBlocks. In <i>Proc. Tangible and Embedded Interaction</i> (TEI'08), 167-168.</li>
+      <li id="sapounidis-2013">Sapounidis, T., &amp; Demetriadis, S. (2013). Tangible versus graphical user interfaces for robot programming: exploring cross-age children’s preferences. <i>Personal and ubiquitous computing, 17</i>(8), 1775-1786.</li>
+      <li id="sipitakiat-2012">Sipitakiat, A., &amp; Nusen, N. (2012). Robo-Blocks: designing debugging abilities in a tangible programming system for early primary school children. In <i>Proc. Interaction Design and Children</i> (IDC'12), 98-105.</li>
+      <li id="weintrop-2013">Weintrop, D., &amp; Wilensky, U. (2013). RoboBuilder: A Computational Thinking Game. In <i>Proc. ACM Technical Symposium on Computer Science Education</i>, 736-736.</li>
       <li id="wyeth-2008">Wyeth, P. (2008). How young children learn to program with sensor, action, and logic blocks. <i>Journal of the Learning Sciences, 17</i>(4), 517-550.</li> 
-
       </ol>
     </div>
     <div id="reference-details"></div>
