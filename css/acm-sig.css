@@ -103,7 +103,6 @@ header { top: 0.2in; }
    font-size: 12pt;
    font-weight: normal;
    text-align: center;
-   width: 100%;
    margin-top: 12pt;
 }
 
@@ -119,7 +118,6 @@ header { top: 0.2in; }
    font-size: 10pt;
    font-weight: normal;
    text-align: center;
-   width: 100%;
    margin: 0;
 }
 
